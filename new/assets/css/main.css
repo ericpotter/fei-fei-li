@@ -1,3 +1,37 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url("fonts/Montserrat-Black.eot");
+	src: local("☺"), url("fonts/Montserrat-Black.woff") format("woff"), url("fonts/Montserrat-Black.ttf") format("truetype"), url("fonts/Montserrat-Black.svg") format("svg");
+	font-weight: 900;
+	font-style: normal
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url("fonts/Montserrat-Bold.eot");
+	src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url("fonts/Montserrat-Regular.eot");
+	src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url("fonts/Montserrat-Light.eot");
+	src: local("☺"), url("fonts/Montserrat-Light.woff") format("woff"), url("fonts/Montserrat-Light.ttf") format("truetype"), url("fonts/Montserrat-Light.svg") format("svg");
+	font-weight: 300;
+	font-style: normal
+}
+
+body, p, h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
 
 .page {
     background-color: #0c0c0c;
@@ -10,37 +44,45 @@
     height: 100vh;
 }
 #right-menu {
-    padding: 30px;
     width: 250px;
     height: 100vh;
     background-color: #343434;
     color: white;
     transition: 1s;
 }
+#right-menu.active {
+    margin-right: -170px;
+}
 #right-menu li {
-    margin: 10px;
-    padding: 3px;
+    margin: 10px 0px 10px 0px;
     text-align: left;
-
     font-size: 23px;  
 }
 #right-menu a {
+    padding: 5px 0px 5px 30px;
+    display: block;
     text-decoration: none;
     color: white;
 }
 #right-menu a:hover {
     transition: 0.3s;
-    color: gray;
-}
-.outer-nav {
-    
-    
+    background-color: white;
+    color: #343434;
 }
 .collapse-btn {
-    margin: 10px;
-    padding: 3px;
+    margin: 50px 0px 15px 25px;
     background-color: #343434;
     color: white;
     border: none;
-    font-size: 23px;
+    font-size: 25px;
+}
+.collapse-btn:hover {
+    background-color: white;
+    color: #343434;
+    border-radius: 10px;
+}
+.nav-options {
+    float: left;
+    width: 50px;
+    padding: 6px 0px 0px 0px;
 }
