@@ -1,3 +1,4 @@
+/* font */
 @font-face {
 	font-family: 'Montserrat';
 	src: url("fonts/Montserrat-Black.eot");
@@ -26,7 +27,7 @@
 	font-weight: 300;
 	font-style: normal
 }
-
+/* all settings */
 body, p, h1, h2, h3, h4, h5, h6, a {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -35,13 +36,44 @@ body, p, h1, h2, h3, h4, h5, h6, a {
 body {
     overflow: hidden;
 }
-
+a {
+    text-decoration: none;
+}
 
 .page {
     background-color: #0c0c0c;
     display: flex;
     align-items: stretch;
 }
+/* grid */
+.left-all {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "header header"
+    "l-side-nav main"
+    "footer footer";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.8fr 2.4fr 0.8fr;
+}
+header {
+    grid-area: header;
+    border: 1px dashed red;
+}
+.l-side-nav {
+    grid-area: l-side-nav;
+    border: 1px dashed red;
+}
+.main {
+    grid-area: main;
+    border: 1px dashed red;
+}
+.footer {
+    grid-area: footer;
+    border: 1px dashed red;
+}
+
+/* left features */ 
 .left-all {
     background-color: #0c0c0c;
     width: 100%;
@@ -56,6 +88,7 @@ body {
 }
 #right-menu.active {
     margin-right: -170px;
+    background-color: #0c0c0c;
 }
 #right-menu li {
     margin: 10px 0px 10px 0px;
@@ -85,8 +118,54 @@ body {
     color: #343434;
     border-radius: 10px;
 }
+.collapse-btn.active {
+    background-color: #0c0c0c;
+}
+.collapse-btn.active:hover {
+    background-color: white;
+    color: #0c0c0c;
+    border-radius: 10px;
+}
 .nav-options {
     float: left;
     width: 50px;
     padding: 6px 0px 0px 0px;
 }
+
+/* right feature */
+header {
+    display: flex;
+    justify-items: center;
+    align-items: center;   
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-left: 20%;
+}
+.header-logo p{
+    margin: 1px 0px 0px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.l-side-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.side-nav {
+    margin-left: 65%;
+    font-size: 15px;
+}
+.side-nav li{
+    margin-top: 100%;
+    margin-bottom: 100%;
+    pointer-events: auto;
+}
+.side-nav li:hover {
+    cursor: pointer;
+}
+
+
