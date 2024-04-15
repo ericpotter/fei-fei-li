@@ -54,7 +54,7 @@ a {
     "l-side-nav main"
     "footer footer";
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.8fr 2.4fr 0.8fr;
+    grid-template-rows: 0.5fr 4fr 0.5fr;
 }
 header {
     grid-area: header;
@@ -85,6 +85,7 @@ header {
     background-color: #343434;
     color: white;
     transition: 1s;
+    box-shadow: #4f4f4f 0px 0px 10px;
 }
 #right-menu.active {
     margin-right: -170px;
@@ -152,20 +153,64 @@ header {
 .l-side-nav {
     display: flex;
     align-items: center;
-    text-align: center;
-
+    text-align: left;
+    justify-content: center;
 }
 .side-nav {
-    margin-left: 65%;
     font-size: 15px;
 }
 .side-nav li{
-    margin-top: 100%;
-    margin-bottom: 100%;
-    pointer-events: auto;
+    color: #343434;
+    margin-top: 55%;
+    margin-bottom: 55%;
+}
+.side-nav>li span {
+    position: relative;
+	visibility: hidden;
 }
 .side-nav li:hover {
     cursor: pointer;
+    color: #727272;
+}
+.side-nav li::before {
+    position: absolute;
+}
+.side-nav li:nth-child(1)::before {
+	content: "01";
+}
+.side-nav li:nth-child(2)::before {
+	content: "02";
+}
+.side-nav li:nth-child(3)::before {
+	content: "03";
+}
+.side-nav li:nth-child(4)::before {
+	content: "04";
+}
+.side-nav li:nth-child(5)::before {
+	content: "05";
+}
+.side-nav li.active {
+	color: white;
+	transition: color .4s ease-in-out;
+}
+.side-nav li.active span {
+    justify-content: center;
+	visibility: visible;
+	transition: color .4s ease-in-out;
+}
+.side-nav li.active::before {
+	visibility: hidden;
+    transition: color .4s ease-in-out;
 }
 
+.section {
+    
+}
 
+#btn-learnMore {
+    background-color: #0f33ff;
+    color: white;
+    border: none;
+    padding: 5px 15px 5px 15px;
+}
