@@ -66,6 +66,7 @@ header {
 .main {
     grid-area: main;
     height: 100%;
+    box-shadow: 10px 5px 10px #343434;
 }
 .footer {
     grid-area: footer;
@@ -78,7 +79,6 @@ header {
     background-color: #343434;
     color: white;
     transition: 1s;
-    box-shadow: #4f4f4f 0px 0px 10px;
 }
 #right-menu.active {
     margin-right: -170px;
@@ -226,27 +226,31 @@ header {
 	font-weight: 900;
 	line-height: 1;
 	z-index: 1;
-    text-shadow: #4f4f4f 2px 2px 2px; 
+    text-shadow: #4f4f4f 5px 5px 5px; 
 }
-#photoCarousel {
-    border: solid;
+.intro img {
     position: absolute;
     height: 100%;
-    width: 60%;
-    right: 28%;
+    right: 35%;
     top: 0;
+    
+}
+#photoCarousel {
+    position: absolute;
+    height: 100%;
+    right: 35%;
+    top: 0;
+    border: solid;
 }
 .carousel-inner {
     height: 100%;
-    border: solid;
+    top: 0;
 }
-/* .intro img {
+.carousel-item img{
+    top: 0;
     height: 100%;
     width: auto;
-    position: absolute;
-    right: 28%;
-    top: 0;
-} */
+}
 #btn-learnMore {
     position: absolute;
     bottom: 10%;
