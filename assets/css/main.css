@@ -66,7 +66,6 @@ header {
 .main {
     grid-area: main;
     height: 100%;
-    box-shadow: 10px 5px 10px #343434;
 }
 .footer {
     grid-area: footer;
@@ -207,49 +206,38 @@ header {
 }
 
 .section{
-    height: 100%;
-    width: 100%;
     visibility: hidden;
 }
 .section.active {
     visibility: visible;
 }
-.intro {
+.section-home {
     padding: 20px;
     position: relative;
     height: 100%;
     width: 100%;
-
+    border-bottom: #343434 2px solid;
+    
 }
-.intro h1 {
+.section-home h1 {
 	font-size: 68px;
 	font-weight: 900;
 	line-height: 1;
 	z-index: 1;
     text-shadow: #4f4f4f 5px 5px 5px; 
 }
-.intro img {
-    position: absolute;
-    height: 100%;
-    right: 35%;
-    top: 0;
-    
-}
 #photoCarousel {
     position: absolute;
     height: 100%;
-    right: 35%;
+    width: 450px;
     top: 0;
-    border: solid;
+    right: 30%;
 }
 .carousel-inner {
     height: 100%;
-    top: 0;
 }
-.carousel-item img{
-    top: 0;
+.carousel-item {
     height: 100%;
-    width: auto;
 }
 #btn-learnMore {
     position: absolute;
@@ -259,9 +247,15 @@ header {
     background-color: #0f33ff;
     color: white;
     border: none;
-    padding: 5px 15px 5px 15px;
-    transition: 0.5s ease-in-out;
+    padding: 10px 15px 10px 15px;
+    transition: 0.3s ease-in-out;
 }
 #btn-learnMore:hover {
-    box-shadow: 5px 5px #4f4f4f;
+    box-shadow: 10px 10px #4f4f4f;
+}
+.section-intro {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: solid;
 }
