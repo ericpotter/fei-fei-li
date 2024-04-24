@@ -35,4 +35,6 @@ $(document).ready(function(){
 			$('.main').children().eq(curPos).children().addClass('section-prev');
 		}
 	}
+
+	$( ".introduction" ).textillate();
 })

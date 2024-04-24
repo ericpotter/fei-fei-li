@@ -66,6 +66,7 @@ header {
 .main {
     grid-area: main;
     height: 100%;
+    position: relative;
 }
 .footer {
     grid-area: footer;
@@ -206,23 +207,23 @@ header {
 }
 
 .section{
+    position: absolute;
     height: 100%;
+    width: 100%;
     visibility: hidden;
-    position: relative;
     z-index: 0;
     opacity: 0;
     transition: opacity .4s ease-in-out, visibility 0s .4s
 }
 .section.active {
-    height: 100%;
     visibility: visible;
     z-index: 1;
     opacity: 1;
     transition: opacity .4s ease-in-out .4s
 }
 .section-home {
-    padding: 20px;
-    position: relative;
+    padding: 30px;
+    position: absolute;
     height: 100%;
     width: 100%;
     border-bottom: #343434 2px solid;
@@ -237,9 +238,9 @@ header {
 #photoCarousel {
     position: absolute;
     height: 100%;
-    width: 45%;
+    width: 600px;
     top: 0;
-    right: 30%;
+    right: 25%;
 }
 .carousel-inner {
     height: 100%;
@@ -262,9 +263,5 @@ header {
     box-shadow: 10px 10px #4f4f4f;
 }
 .section-intro {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border: solid;
-    bottom: 0;
+    
 }
