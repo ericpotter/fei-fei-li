@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
     $('.side-nav li').click(function(){
         if (!($(this).hasClass('active'))){
 			let $this = $(this),
@@ -12,6 +10,7 @@ $(document).ready(function(){
             $('.side-nav').children().removeClass('active');
             $('.side-nav').children().eq(nextPos).addClass('active');
 			updateContent(curPos, nextPos, lastItem);
+			if (nextPos == 1) textAnimation('.simple-intro');
 		}
     });
 
@@ -23,7 +22,7 @@ $(document).ready(function(){
     })
 
 
-    function updateContent(curPos, nextPos, lastItem) {
+    function updateContent(curPos, nextPos, lastItem){
 		$('.main').children().removeClass('active');
 		$('.main').children().eq(nextPos).addClass('active');
 		$('.main .section').children().removeClass('section-next section-prev');
@@ -36,5 +35,20 @@ $(document).ready(function(){
 		}
 	}
 
-	$( ".introduction" ).textillate();
+	function textAnimation(className){
+		$(className).textillate({
+			in: {
+			  effect: 'bounceInDown', 
+			  delay: 5, 
+			  sequence: true,
+			},
+			out: {
+			  effect: 'rotateOut', 
+			  delay: 5,
+			  sequence: true,
+			},
+			loop: false
+		});
+	}
+	
 })
