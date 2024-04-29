@@ -27,6 +27,52 @@
 	font-weight: 300;
 	font-style: normal
 }
+
+
+/* 手機優先 */
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 1400px) {
+    
+}
+
+/* 桌面版優先 */
+
+@media (max-width: 1399.98px) {
+    
+}
+
+@media (max-width: 1199.98px) {
+    
+}
+
+@media (max-width: 991.98px) {
+    
+}
+
+@media (max-width: 767.98px) {
+    
+}
+
+@media (max-width: 575.98px) {
+    
+}
+
 /* all settings */
 body, p, h1, h2, h3, h4, h5, h6, a {
     font-family: 'Montserrat', sans-serif;
