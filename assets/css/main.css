@@ -118,53 +118,57 @@ header {
     grid-area: footer;
 }
 
+
 /* right features */ 
 #right-menu {
-    width: 250px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
     height: 100vh;
     background-color: #343434;
     color: white;
     transition: 1s;
 }
-#right-menu.active {
-    margin-right: -170px;
-    background-color: #0c0c0c;
-}
 #right-menu li {
-    margin: 10px 0px 10px 0px;
     text-align: left;
-    font-size: 23px;  
+    font-size: 25px;
+    margin: 15px 0px 15px 0px;
 }
 #right-menu a {
     padding: 5px 0px 5px 30px;
     display: block;
     text-decoration: none;
     color: white;
+    border-radius: 10px;
 }
 #right-menu a:hover {
     transition: 0.3s;
     background-color: white;
     color: #343434;
 }
-.collapse-btn {
-    margin: 50px 0px 15px 25px;
+.btn-right-menu {
+    margin: 50% 100px 0px 0px;
     background-color: #343434;
+    opacity: 50%;
     color: white;
     border: none;
     font-size: 25px;
 }
-.collapse-btn:hover {
+.btn-right-menu:hover {
+    opacity: 100%;
     background-color: white;
     color: #343434;
-    border-radius: 10px;
 }
-.collapse-btn.active {
-    background-color: #0c0c0c;
+.btn-menu-close {
+    margin: 30% 0px 0px 10%;
+    color: white;
+    font-size: 25px;
+    background-color: #343434;
+    border: none;
 }
-.collapse-btn.active:hover {
-    background-color: white;
-    color: #0c0c0c;
-    border-radius: 10px;
+.btn-menu-close:hover {
+    color: #151515;
+    
 }
 .nav-options {
     float: left;
@@ -252,6 +256,7 @@ header {
     transition: color .4s ease-in-out;
 }
 
+/* section */
 .section{
     position: absolute;
     height: 100%;
@@ -267,6 +272,8 @@ header {
     opacity: 1;
     transition: opacity .4s ease-in-out .4s
 }
+
+/* section home */
 .section-home {
     padding: 30px;
     position: absolute;
@@ -309,3 +316,17 @@ header {
     box-shadow: 10px 10px #4f4f4f;
 }
 
+/* section simple intro */
+.section-intro {
+
+}
+#btn-return {
+    font-size: 40px;
+    background-color: #0c0c0c;
+    color: white;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+#btn-return:hover {
+    color: #9d9d9d;
+}

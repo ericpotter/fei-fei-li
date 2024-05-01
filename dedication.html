@@ -130,20 +130,29 @@
             </div>
 
             <div class="right-all">
-                <nav id="right-menu" class="active">
-                    <button type="button" id="collapse" class="collapse-btn active">
+                <div class="right-all">
+                    <button class="btn btn-right-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#right-menu" aria-controls="right-menu">
                         <i class="fa-solid fa-bars"></i>
                     </button>
-                    <ul class="outer-nav list-unstyled">
-                        <li><a href="index.html">Home<i class="fa-solid fa-house nav-options"></i></a></li>
-                        <li><a href="about.html">About<i class="fa-solid fa-user nav-options"></i></a></li>
-                        <li><a href="introduction.html">Introduction<i class="fa-solid fa-address-card nav-options"></i></a></li>
-                        <li><a href="dedication.html">Dedication<i class="fa-solid fa-award nav-options"></i></a></li>
-                        <li><a href="media.html">Media<i class="fa-solid fa-photo-film nav-options"></i></a></li>
-                        <li><a href="interaction.html">Interaction<i class="fa-solid fa-hand nav-options"></i></a></li>
-                        <li><a href="contact.html">Contact<i class="fa-solid fa-envelope nav-options"></i></a></li>
-                    </ul>
-                </nav>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="right-menu" aria-labelledby="offcanvasLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="outer-nav list-unstyled">
+                                <li><a href="index.html">Home<i class="fa-solid fa-house nav-options"></i></a></li>
+                                <li><a href="about.html">About<i class="fa-solid fa-user nav-options"></i></a></li>
+                                <li><a href="introduction.html">Introduction<i class="fa-solid fa-address-card nav-options"></i></a></li>
+                                <li><a href="dedication.html">Dedication<i class="fa-solid fa-award nav-options"></i></a></li>
+                                <li><a href="media.html">Media<i class="fa-solid fa-photo-film nav-options"></i></a></li>
+                                <li><a href="interaction.html">Interaction<i class="fa-solid fa-hand nav-options"></i></a></li>
+                                <li><a href="contact.html">Contact<i class="fa-solid fa-envelope nav-options"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
