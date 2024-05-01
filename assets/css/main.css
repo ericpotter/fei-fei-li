@@ -87,7 +87,7 @@ a {
 }
 
 .page {
-    background-color: #0c0c0c;
+    background-color: #040e20;
     display: flex;
     align-items: stretch;
 }
@@ -97,10 +97,10 @@ a {
     width: 100%;
     height: 100%;
     grid-template-areas: 
-    "header header"
+    "l-side-nav header"
     "l-side-nav main"
-    "footer footer";
-    grid-template-columns: 1fr 4fr;
+    "l-side-nav footer";
+    grid-template-columns: 1fr 7fr;
     grid-template-rows: 1fr 3fr 1fr;
 }
 header {
@@ -125,7 +125,7 @@ header {
     justify-content: center;
     width: 300px;
     height: 100vh;
-    background-color: #343434;
+    background-color: #132648;
     color: white;
     transition: 1s;
 }
@@ -148,7 +148,7 @@ header {
 }
 .btn-right-menu {
     margin: 50% 100px 0px 0px;
-    background-color: #343434;
+    background-color: #132648;
     opacity: 50%;
     color: white;
     border: none;
@@ -164,7 +164,7 @@ header {
     display: block;
     color: white;
     font-size: 25px;
-    background-color: #343434;
+    background-color: #132648;
     border: none;
 }
 .btn-menu-close:hover {
@@ -179,7 +179,6 @@ header {
 
 /* left feature */
 .left-all {
-    background-color: #0c0c0c;
     width: 100%;
     height: 100vh;
 }
@@ -192,7 +191,7 @@ header {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 .header-logo img {
     width: 50px;
@@ -208,6 +207,7 @@ header {
     align-items: center;
     text-align: left;
     justify-content: center;
+    background-color: #132648;
 }
 .side-nav {
     font-size: 15px;
@@ -276,14 +276,15 @@ header {
 
 /* section home */
 .section-home {
-    padding: 30px;
+    padding-left: 10%;
+    padding-top: 3%;
     position: absolute;
     height: 100%;
     width: 100%;
     border-bottom: #343434 2px solid;
 }
 .section-home h1 {
-	font-size: 68px;
+	font-size: 100px;
 	font-weight: 900;
 	line-height: 1;
 	z-index: 1;
@@ -294,7 +295,7 @@ header {
     height: 100%;
     width: 600px;
     top: 0;
-    right: 25%;
+    right: 20%;
 }
 .carousel-inner {
     height: 100%;
