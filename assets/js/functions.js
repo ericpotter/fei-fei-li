@@ -10,17 +10,17 @@ $(document).ready(function(){
             $('.side-nav').children().removeClass('active');
             $('.side-nav').children().eq(nextPos).addClass('active');
 			updateContent(curPos, nextPos, lastItem);
-			if (nextPos == 1) textAnimation('.simple-intro');
 		}
     });
 
-
-    $("#collapse").on("click", function(){
-        $("#right-menu").toggleClass("active");
-        $(".fa-bars").toggleClass("fa-bars-staggered");
-        $(".collapse-btn").toggleClass("active");      
-    })
-
+	$('#btn-learnMore, #btn-return').click(function(){
+		let $this = $(this),
+			curActive = $this.parent().find('.active'),
+			curPos = $this.parent().children().index(curActive),
+			nextPos = $this.parent().children().index($this),
+			lastItem = $(this).parent().children().length - 1;
+		updateContent(curPos, nextPos, lastItem);
+    });
 
     function updateContent(curPos, nextPos, lastItem){
 		$('.main').children().removeClass('active');
