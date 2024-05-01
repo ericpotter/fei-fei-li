@@ -160,7 +160,8 @@ header {
     color: #343434;
 }
 .btn-menu-close {
-    margin: 30% 0px 0px 10%;
+    padding: 5px 0px 5px 30px;
+    display: block;
     color: white;
     font-size: 25px;
     background-color: #343434;
@@ -171,7 +172,7 @@ header {
     
 }
 .nav-options {
-    float: left;
+    
     width: 50px;
     padding: 6px 0px 0px 0px;
 }
