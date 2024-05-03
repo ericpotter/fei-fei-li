@@ -168,13 +168,18 @@ header {
     border: none;
 }
 .btn-menu-close:hover {
-    color: #151515;
+    color: #767676;
     
 }
 .nav-options {
-    
     width: 50px;
     padding: 6px 0px 0px 0px;
+}
+.lang-change {
+    text-align: left;
+    font-size: 20px;
+    margin: 15px 0px 15px 30px;
+    border-radius: 10px;
 }
 
 /* left feature */
@@ -213,7 +218,7 @@ header {
     font-size: 15px;
 }
 .side-nav li{
-    color: #343434;
+    color: #8d8d8d;
     margin-top: 55%;
     margin-bottom: 55%;
 }
@@ -223,7 +228,7 @@ header {
 }
 .side-nav li:hover {
     cursor: pointer;
-    color: #727272;
+    color: #bfbfbf;
 }
 .side-nav li::before {
     position: absolute;
@@ -295,7 +300,7 @@ header {
     height: 100%;
     width: 600px;
     top: 0;
-    right: 20%;
+    right: 15%;
 }
 .carousel-inner {
     height: 100%;
@@ -320,16 +325,28 @@ header {
 
 /* section simple intro */
 .section-intro {
-    padding-left: 10%;
-    padding-top: 3%;
-    position: absolute;
     height: 100%;
     width: 100%;
+    display: flex;
+}
+.button {
+    display: flex;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+.texts {
+    display: block;
+    align-content: center;
+    
 }
 .section-intro h1 {
+    margin-bottom: 30px;
     font-size: 50px;
 }
 .section-intro p {
+    margin-top: 30px;
     font-size: 30px;
 }
 #btn-return {
@@ -351,4 +368,9 @@ header {
 }
 .footer p {
     color: #bebebe;
+}
+
+/* language changing */
+.modal-content {
+    background-color: #132648;
 }

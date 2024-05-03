@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('.side-nav li').click(function(){
+    $('.side-nav li, #btn-learnMore, #btn-return').click(function(){
         if (!($(this).hasClass('active'))){
 			let $this = $(this),
 				curActive = $this.parent().find('.active'),
@@ -11,15 +11,6 @@ $(document).ready(function(){
             $('.side-nav').children().eq(nextPos).addClass('active');
 			updateContent(curPos, nextPos, lastItem);
 		}
-    });
-
-	$('#btn-learnMore, #btn-return').click(function(){
-		let $this = $(this),
-			curActive = $this.parent().find('.active'),
-			curPos = $this.parent().children().index(curActive),
-			nextPos = $this.parent().children().index($this),
-			lastItem = $(this).parent().children().length - 1;
-		updateContent(curPos, nextPos, lastItem);
     });
 
     function updateContent(curPos, nextPos, lastItem){
