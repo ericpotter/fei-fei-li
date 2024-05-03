@@ -100,7 +100,7 @@ a {
     "l-side-nav header"
     "l-side-nav main"
     "l-side-nav footer";
-    grid-template-columns: 1fr 7fr;
+    grid-template-columns: 1fr 8fr;
     grid-template-rows: 1fr 3fr 1fr;
 /* ↑這裡我看不懂 */
 }
@@ -109,7 +109,7 @@ a {
     height: 100%;
     position: absolute;
     left: 10%;
-    opacity: 10%;
+    opacity: 12%;
     z-index: 1;
 }
 header {
