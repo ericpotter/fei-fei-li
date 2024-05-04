@@ -25,20 +25,20 @@ $(document).ready(function(){
 			$('.main').children().eq(curPos).children().addClass('section-prev');
 		}
 	}
-
+	textAnimation('.sayings');
 	function textAnimation(className){
 		$(className).textillate({
 			in: {
-			  effect: 'bounceInDown', 
-			  delay: 5, 
+			  effect: 'fadeInLeft', 
+			  delay: 50, 
 			  sequence: true,
 			},
 			out: {
-			  effect: 'rotateOut', 
-			  delay: 5,
+			  effect: 'fadeOutRight', 
+			  delay: 50,
 			  sequence: true,
 			},
-			loop: false
+			loop: true
 		});
 	}
 	
