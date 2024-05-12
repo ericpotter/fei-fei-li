@@ -51,28 +51,6 @@
     
 }
 
-/* 桌面版優先 */
-
-@media (max-width: 1399.98px) {
-    
-}
-
-@media (max-width: 1199.98px) {
-    
-}
-
-@media (max-width: 991.98px) {
-    
-}
-
-@media (max-width: 767.98px) {
-    
-}
-
-@media (max-width: 575.98px) {
-    
-}
-
 /* all settings */
 body, p, h1, h2, h3, h4, h5, h6, a {
     font-family: 'Montserrat', sans-serif;
@@ -159,8 +137,6 @@ header {
     color: #343434;
 }
 .btn-right-menu {
-    position: absolute;
-    right: 10%;
     background-color: #132648;
     opacity: 50%;
     color: white;
@@ -201,25 +177,35 @@ header {
     height: 100vh;
 }
 header {
-    display: flex;
-    justify-items: center;
-    align-items: center;   
+    
 }
+.container-fluid {
+    height: 100%;
+}
+.row {
+    height: 100%;
+}
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-logo{
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    margin-left: 10%;
 }
 .header-logo img {
-    width: 60px;
-    height: auto;
+    width: 50px;
 }
 .header-logo p{
     margin: 1px 0px 0px 10px;
     font-size: 30px;
     font-weight: bold;
 }
+
+
 .l-side-nav {
     display: flex;
     align-items: center;
