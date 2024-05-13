@@ -42,15 +42,15 @@
                 <img class="background-photo" src="assets/img/introduction1.png" class="img-fluid" alt="background photo">
                 
                 <header class="header">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col">
+                    <div class="container-fluid header-title">
+                        <div class="row header-content">
+                            <div class="col col-logo">
                                 <a class="header-logo" href="index.html">
                                     <img src="assets/img/logo.png" alt="Female Scientist">
                                     <p>Female Scientist</p>
                                 </a>
                             </div>
-                            <div class="col">
+                            <div class="col-3 col-btn-right-menu">
                                 <button class="btn btn-primary btn-right-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#right-menu" aria-controls="right-menu">
                                     <i class="fa-solid fa-bars"></i>
                                 </button>
@@ -61,30 +61,40 @@
                 </header>
                 <nav class="l-side-nav">
                     <ul class="side-nav list-unstyled">
-                        <li class="active"><span>Home</span></li>
-                        <li><span>Intro</span></li>
+                        <li class="active">Home</li>
+                        <li>Intro</li>
                     </ul>
                 </nav>
                 <ul class="main list-unstyled">
                     <li class="section active">
                         <div class="section-home">
-                            <h1>Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li</h1>
-                            <button id="btn-learnMore">
-                                Learn more <i class="fa-solid fa-angles-right"></i>
-                            </button>
-                            <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="assets/img/photo1.png" class="d-block w-100" alt="Dr. fei fei li">
+                            <div class="container-fluid section-home-main">
+                                <div class="row section-home-content">
+                                    <div class="col col-home-title">
+                                        <h1>Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li</h1>
+                                        <button id="btn-learnMore">
+                                            Learn more <i class="fa-solid fa-angles-right"></i>
+                                        </button>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/img/photo2.png" class="d-block w-100" alt="Dr. fei fei li">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/img/photo3.png" class="d-block w-100" alt="Dr. fei fei li">
+                                    <div class="col col-photoCarousel">
+                                        <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/photo1.png" class="d-block w-100" alt="Dr. fei fei li">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/photo2.png" class="d-block w-100" alt="Dr. fei fei li">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/photo3.png" class="d-block w-100" alt="Dr. fei fei li">
+                                                </div>
+                                            </div>
+                                        </div> 
                                     </div>
                                 </div>
-                            </div>                           
+                            </div>
+                            
+                                                      
                         </div>
                     </li>
 
