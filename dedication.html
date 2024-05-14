@@ -41,10 +41,22 @@
 
             <div class="left-all">
                 <header class="header">
-                    <a class="header-logo" href="index.html">
-                        <img src="assets/img/logo.png" alt="Female Scientist">
-                        <p>Female Scientist</p>
-                    </a>
+                    <div class="container-fluid header-title">
+                        <div class="row header-content">
+                            <div class="col col-logo">
+                                <a class="header-logo" href="index.html">
+                                    <img src="assets/img/logo.png" alt="Female Scientist">
+                                    <p>Female Scientist</p>
+                                </a>
+                            </div>
+                            <div class="col-3 col-btn-right-menu">
+                                <button class="btn btn-primary btn-right-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#right-menu" aria-controls="right-menu">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </header>
 
                 <nav class="l-side-nav">
@@ -122,9 +134,7 @@
             </div>
 
             <div class="right-all">
-                <button class="btn btn-right-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#right-menu" aria-controls="right-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="right-menu" aria-labelledby="offcanvasLabel">
                     <div class="offcanvas-header">
                     </div>
