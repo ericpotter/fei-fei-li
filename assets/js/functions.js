@@ -13,7 +13,7 @@ $(document).ready(function(){
 		}
     });
 
-    function updateContent(curPos, nextPos, lastItem){
+    function updateContent(curPos, nextPos, lastItem){ // 頁面更新
 		$('.main').children().removeClass('active');
 		$('.main').children().eq(nextPos).addClass('active');
 		$('.main .section').children().removeClass('section-next section-prev');
