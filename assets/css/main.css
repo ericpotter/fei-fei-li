@@ -415,9 +415,13 @@ header {
 }
 /* contact */
 .contact-set {
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right:15%;
+    background-color: #2e3abe;
 }
 /* dedication */
 .dedication-set {
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right:15%;
+    background-color: #2e3abe;
 }
