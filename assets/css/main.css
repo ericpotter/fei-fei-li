@@ -46,17 +46,25 @@
 
     /* section */
     .section-home h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
     #btn-learnMore {
         font-size: 13px;
+        bottom: 30%;
+    }
+    .col-home-title {
+        padding-top: 20%;
     }
     .col-photoCarousel {
         justify-content: right;
-        align-items: center;
+        align-items: end;
     }
     #photoCarousel {
-        width: 200px;
+        height: 350px;
+        width: 350px;
+    }
+    .carousel-item { 
+        left: 45px;  
     }
 
     /* grid */
@@ -113,9 +121,22 @@
     }
     #btn-learnMore {
         font-size: 14px;
+        bottom: 30%;
+    }
+    .col-home-title {
+        padding-top: 10%;
+    }
+    .col-photoCarousel {
+        justify-content: right;
+        align-items: end;
     }
     #photoCarousel {
-        width: 600px;
+        height: 350px;
+        width: 400px;
+    }
+    .carousel-item { 
+        left: 0;
+        right: 0;  
     }
 
     /* grid */
@@ -147,6 +168,9 @@
     h4.sayings {
         font-size: 13px;
     }
+    .blockquote-footer {
+        font-size: 8px;
+    }
 
 }
 
@@ -170,9 +194,22 @@
     }
     #btn-learnMore {
         font-size: 15px;
+        bottom: 20%;
+    }
+    .col-home-title {
+        padding-top: 5%;
+    }
+    .col-photoCarousel {
+        justify-content: left;
+        align-items: center;
     }
     #photoCarousel {
-        width: 600px;
+        width: 400px;
+        height: 100%;
+    }
+    .carousel-item { 
+        left: 0;  
+        right: 0;  
     }
 
     /* grid */
@@ -201,8 +238,16 @@
         grid-area: main;
         position: relative;
     }
+
+    /* footer */
     .footer {
         grid-area: footer;
+    }
+    h4.sayings {
+        font-size: 18px;
+    }
+    .blockquote-footer {
+        font-size: 9px;
     }
 }
 
@@ -222,13 +267,26 @@
 
     /* section */
     .section-home h1 {
-        font-size: 50px;
+        font-size: 55px;
     }
     #btn-learnMore {
         font-size: 16px;
+        bottom: 20%;
+    }
+    .col-home-title {
+        padding-top: 2%;
+    }
+    .col-photoCarousel {
+        justify-content: left;
+        align-items: center;
     }
     #photoCarousel {
-        width: 600px;
+        width: 450px;
+        height: 100%;
+    }
+    .carousel-item { 
+        left: 0;  
+        right: 0;  
     }
 
     /* grid */
@@ -257,8 +315,16 @@
         grid-area: main;
         position: relative;
     }
+
+    /* footer */
     .footer {
         grid-area: footer;
+    }
+    h4.sayings {
+        font-size: 20px;
+    }
+    .blockquote-footer {
+        font-size: 10px;
     }
 }
 
@@ -282,9 +348,22 @@
     }
     #btn-learnMore {
         font-size: 16px;
+        bottom: 20%;
+    }
+    .col-home-title {
+        padding-top: 2%;
+    }
+    .col-photoCarousel {
+        justify-content: left;
+        align-items: center;
     }
     #photoCarousel {
-        width: 450px;
+        width: 500px;
+        height: 100%;
+    }
+    .carousel-item { 
+        left: 0;  
+        right: 0;  
     }
 
     /* grid */
@@ -313,8 +392,16 @@
         grid-area: main;
         position: relative;
     }
+
+    /* footer */
     .footer {
         grid-area: footer;
+    }
+    h4.sayings {
+        font-size: 22px;
+    }
+    .blockquote-footer {
+        font-size: 12px;
     }
 }
 
@@ -338,6 +425,10 @@
     }
     #btn-learnMore {
         font-size: 16px;
+        bottom: 20%;
+    }
+    .col-home-title {
+        padding-top: 2%;
     }
     .col-photoCarousel {
         justify-content: left;
@@ -345,6 +436,11 @@
     }
     #photoCarousel {
         width: 550px;
+        height: 100%;
+    }
+    .carousel-item { 
+        left: 0;  
+        right: 0;  
     }
 
     /* grid */
@@ -562,7 +658,6 @@ a {
 
 /* section home */
 .section-home {
-    position: absolute;
     height: 100%;
     width: 100%;
     border-bottom: #343434 2px solid;
@@ -577,13 +672,13 @@ a {
 }
 .col-home-title {
     padding-left: 10%;
-    padding-top: 2%;
     border: solid red;
+    display: flex;
 }
 
 .col-photoCarousel {
     border: solid red;
-    display: flex;
+    display: flex;   
 }
 
 .section-home h1 {
@@ -593,7 +688,6 @@ a {
     text-shadow: #4f4f4f 5px 5px 5px; 
 }
 #photoCarousel {
-    height: 100%;
     border: solid green;
     position: relative;
 }
@@ -607,15 +701,11 @@ a {
     width: auto;
     height: auto;
     position: absolute;  
-    top: 0;  
     bottom: 0;  
-    left: 0;  
-    right: 0;  
-    margin: auto;
 }
 #btn-learnMore {
     position: absolute;
-    bottom: 20%;
+    z-index: 2;
     text-transform: uppercase;
     font-weight: 700;
     background-color: #3E55E1;
