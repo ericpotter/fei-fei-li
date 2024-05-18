@@ -53,15 +53,15 @@
         bottom: 30%;
     }
     .col-home-title {
-        padding-top: 20%;
+        padding-top: 15%;
     }
     .col-photoCarousel {
         justify-content: right;
         align-items: end;
     }
     #photoCarousel {
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
     .carousel-item { 
         left: 45px;  
