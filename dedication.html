@@ -79,7 +79,7 @@
                                 About 40 to 800 images per category. Most categories have about 50 images. Collected in September 2003 by researchers(Fei-Fei Li, 
                                 Marco Andreetto, and Marc'Aurelio Ranzato) and students at the California Institute of Technology (Caltech). The size of each image 
                                 is roughly 300 x 200 pixels.</p>
-                                <img src="assets\img\dedication\Caltech101.png" width="500" heigh="300" loading="lazy">
+                                <img src="assets\img\dedication\Caltech101.png" width="500" heigh="300" loading="lazy" >
                             </div>    
                         </div>
                     </li>
@@ -123,7 +123,23 @@
                         </div>
                     </li>
                 </ul>
-                
+                <script>
+                    
+                    const images = document.querySelectorAll('.dedication-set img');
+
+                    images.forEach(image => {
+                    // 當滑鼠移到圖片上時放大圖片
+                    image.addEventListener('mouseenter', () => {
+                         gsap.to(image, { scale: 1.2, duration: 0.3, ease: "power1.inOut" });
+                     });
+
+                     // 當滑鼠移開圖片時恢復原始大小
+                     image.addEventListener('mouseleave', () => {
+                       gsap.to(image, { scale: 1, duration: 0.3, ease: "power1.inOut" });
+                     });
+                    });
+
+                </script>
                 <footer class="footer">
                     
                 </footer>

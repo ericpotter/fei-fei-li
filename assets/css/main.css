@@ -769,12 +769,21 @@ a {
 /* contact */
 .contact-set {
     margin-left: 30px;
-    margin-right:15%;
-    background-color: #2e3abe;
+    margin-right:15%;   
+    
 }
 /* dedication */
 .dedication-set {
     margin-left: 30px;
     margin-right:15%;
-    background-color: #2e3abe;
+    
+}
+.dedication-set img {
+    display: block;
+    transition: transform 0.3s ease;
+    transform-origin: left bottom; 
+}
+.contact-set p{
+    opacity: 0;
+    transform: translateY(20px); 
 }
