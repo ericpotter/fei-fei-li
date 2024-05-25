@@ -1,0 +1,16 @@
+.timeline__img {
+    max-width: 30%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    margin: auto 1% auto 5%;
+}
+
+/*內文文字顏色*/
+.timeline__content-desc {
+    margin: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Cardo;
+    font-weight: normal;
+    line-height: 25px;
+}
