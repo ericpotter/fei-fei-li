@@ -53,18 +53,18 @@
         bottom: 30%;
     }
     .col-home-title {
-        padding-top: 10%;
+        padding-top: 3%
     }
     .col-photoCarousel {
         justify-content: right;
         align-items: end;
     }
     #photoCarousel {
-        height: 330px;
-        width: 350px;
+        height: 250px;
+        width: 300px;
     }
     .carousel-item { 
-        left: 45px;  
+        left: 40px; 
     }
 
     /* grid */
@@ -76,7 +76,7 @@
         "header"
         "main"
         "footer";
-        grid-template-rows: 1fr 7fr 1fr;
+        grid-template-rows: 1fr 6fr 1fr;
     }
     header {
         grid-area: header;
@@ -117,7 +117,7 @@
 
     /* section */
     .section-home h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
     #btn-learnMore {
         font-size: 14px;
@@ -132,7 +132,7 @@
     }
     #photoCarousel {
         height: 350px;
-        width: 400px;
+        width: 310px;
     }
     .carousel-item { 
         left: 0;
@@ -148,7 +148,7 @@
         "header"
         "main"
         "footer";
-        grid-template-rows: 1fr 7fr 1fr;
+        grid-template-rows: 1fr 6fr 1fr;
     }
     header {
         grid-area: header;
@@ -204,7 +204,7 @@
         align-items: center;
     }
     #photoCarousel {
-        width: 400px;
+        width: 300px;
         height: 100%;
     }
     .carousel-item { 
@@ -267,7 +267,7 @@
 
     /* section */
     .section-home h1 {
-        font-size: 55px;
+        font-size: 50px;
     }
     #btn-learnMore {
         font-size: 16px;
@@ -281,7 +281,7 @@
         align-items: center;
     }
     #photoCarousel {
-        width: 450px;
+        width: 390px;
         height: 100%;
     }
     .carousel-item { 
@@ -358,7 +358,7 @@
         align-items: center;
     }
     #photoCarousel {
-        width: 500px;
+        width: 400px;
         height: 100%;
     }
     .carousel-item { 
