@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
-/*
+
 .timeline {
     display: flex;
-    margin: 0 auto;
+    margin-right: auto;
+    /*直式並列*/
     flex-wrap: wrap;
     flex-direction: column;
+    /*直式並列*/
     max-width: 700px;
+    /*最大寬度*/
     position: right;
-}*/
+}
 
 /*年份顏色設定*/
 .timeline__content-title {
@@ -19,6 +22,8 @@
     box-sizing: border-box;
     font-family: "Pathway Gothic One", sans-serif;
     color: #fff;
+    border-width: 5px;
+    border-style: solid;
 }
 
 /*內文文字顏色*/
@@ -30,9 +35,11 @@
     font-family: Cardo;
     font-weight: normal;
     line-height: 25px;
+    border-width: 5px;
+    border-style: solid;
 }
 
-
+/*
 .timeline:before {
     position: absolute;
     left: 50%;
@@ -41,7 +48,7 @@
     margin-left: -1px;
     content: "";
     background: rgba(255, 255, 255, 0.07);
-}
+}*/
 
 @media only screen and (max-width: 767px) {
     .timeline:before {
@@ -51,6 +58,7 @@
 
 
 .timeline-item {
+    /*內元素與邊界的距離-上下.左右*/
     padding: 40px 0;
     opacity: 0.3;
     filter: blur(2px);
@@ -93,12 +101,15 @@
     padding-right: 15px;
 }
 
+/*轉場-到一個定點時好好停在上面*/
 .timeline-item--active {
     opacity: 1;
     transform: translateY(0);
+    /*模糊效果*/
     filter: blur(0px);
 }
 
+/*轉場-切換前*/
 .timeline-item--active:before {
     top: 100%;
     transition: 0.3s all 0.2s;
