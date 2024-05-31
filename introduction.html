@@ -9,7 +9,8 @@
     <meta name="keywords" content="Scientist, Fei-Fei Li, Female Scientist">
     <link rel="icon" type="image/png" href="assets/img/logo.png">
 
-    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
     <!--<link rel="action" href="assets\js\action.js">-->
 
     <!-- JQuery-->
@@ -59,57 +60,39 @@
             </header>
 
             <nav class="l-side-nav">
-                <ul class="side-nav list-unstyled">
-
-                    <li><span>1976-99</span></li>
-                    <li><span>2001-09</span></li>
-                    <li><span>2009-18</span></li>
-                    <li><span>2018-22</span></li>
-                </ul>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">1976-99</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">1999-09</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading3">2009-18</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading4">2018-22</a>
+                    </li>
             </nav>
 
-            <ul class="main list-unstyled">
-                <li class="section active">
-                    <div class="#">
-                        <!-- partial:index.partial.html -->
-                        <div class="timeline-item">
-                            <div class="timeline__content"><img class="timeline__img"
-                                    src="assets\html\img\introduction1.jpg" />
-                                <h2 class="timeline__content-title">1976</h2>
-                                <p class="timeline__content-desc">Li Feifei was born in Beijing, China in 1976
-                                    and grew up in
-                                    Chengdu,
-                                    Sichuan. At the age of 15, she relocated with her family to New Jersey, USA.
-                                </p>
-                            </div>
-                        </div>
-                </li>
-
-                <li class="section">
-                    <div class="#">
-                        <p>t2222222222t</p>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+                tabindex="0">
+                <h4 id="scrollspyHeading1">
+                    <div class="timeline__content"><img class="timeline__img" src="assets\html\img\introduction1.jpg" />
+                        <h2 class="timeline__content-title">1976</h2>
+                        <p class="timeline__content-desc">Li Feifei was born in Beijing, China in 1976 and grew up in
+                            Chengdu,
+                            Sichuan. At the age of 15, she relocated with her family to New Jersey, USA. </p>
                     </div>
-                </li>
-                <li class="section">
-                    <div class="#">
-                        <p>test</p>
-                    </div>
-                </li>
-                <li class="section">
-                    <div class="#">
-                        <p>test</p>
-                    </div>
-                </li>
-                <li class="section">
-                    <div class="#">
-                        <p>test</p>
-                    </div>
-                </li>
-            </ul>
-
-            <footer class="footer">
-
-            </footer>
+                    <h4 id="scrollspyHeading2">Second heading</h4>
+                    <p>...</p>
+                    <h4 id="scrollspyHeading3">Third heading</h4>
+                    <p>...</p>
+                    <h4 id="scrollspyHeading4">Fourth heading</h4>
+                    <p>...</p>
+                    <h4 id="scrollspyHeading5">Fifth heading</h4>
+                    <p>...</p>
+            </div>
         </div>
 
         <div class="right-all">
