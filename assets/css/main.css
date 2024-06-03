@@ -31,6 +31,13 @@
 
 /* 手機優先 */
 @media (min-width: 340px) {
+    /* background photo*/
+    .background-photo {
+        height: 400px;
+        left: -25%;
+        bottom: 15%;
+    }
+
     /* header */
     .header-logo img {
         width: 40px;
@@ -39,7 +46,7 @@
         font-size: 16px;
     }
     .col-logo {
-        padding-left: 10%;
+        padding-left: 5%;
     }
 
     /* side-nav */
@@ -56,8 +63,8 @@
         bottom: 30%;
     }
     .home-title {
-        padding-top: 10%;
-        padding-left: 10%;
+        padding-top: 15%;
+        padding-left: 5%;
     }
     #photoCarousel {
         height: 100%;
@@ -94,7 +101,7 @@
     /* footer */
     .footer {
         grid-area: footer;
-        padding-left: 10%;
+        padding-left: 5%;
     }
     h4.sayings {
         font-size: 12px;
@@ -105,6 +112,13 @@
 }
 
 @media (min-width: 467px) {
+    /* background photo*/
+    .background-photo {
+        height: 450px;
+        left: -20%;
+        bottom: 13%;
+    }
+
     /* header */
     .header-logo img {
         width: 40px;
@@ -123,7 +137,7 @@
 
     /* section */
     .section-home h1 {
-        font-size: 50px;
+        font-size: 63px;
     }
     #btn-learnMore {
         font-size: 13px;
@@ -135,7 +149,7 @@
     }
     #photoCarousel {
         height: 100%;
-        width: 400px;
+        width: 430px;
         right: 0;
         bottom: 0;
     }
@@ -179,6 +193,13 @@
 }
 
 @media (min-width: 576px) {
+    /* background photo*/
+    .background-photo {
+        height: 500px;
+        left: -15%;
+        bottom: 15%;
+    }
+
     /* header */
     .header-logo img {
         width: 40px;
@@ -197,14 +218,14 @@
 
     /* section */
     .section-home h1 {
-        font-size: 60px;
+        font-size: 70px;
     }
     #btn-learnMore {
         font-size: 14px;
         bottom: 30%;
     }
     .home-title {
-        padding-top: 10%;
+        padding-top: 5%;
         padding-left: 10%;
     }
     #photoCarousel {
@@ -255,6 +276,13 @@
 }
 
 @media (min-width: 768px) {
+    /* background photo*/
+    .background-photo {
+        height: 550px;
+        left: 1%;
+        bottom: 15%;
+    }
+
     /* header */
     .header-logo img {
         width: 45px;
@@ -270,18 +298,18 @@
 
     /* section */
     .section-home h1 {
-        font-size: 55px;
+        font-size: 65px;
     }
     #btn-learnMore {
         font-size: 15px;
         bottom: 20%;
     }
     .home-title {
-        padding-top: 5%;
+        padding-top: 0;
         padding-left: 10%;
     }
     #photoCarousel {
-        width: 420px;
+        width: 450px;
         height: 100%;
         right: 0;
         bottom: 0;
@@ -301,7 +329,7 @@
         "l-side-nav main"
         "l-side-nav footer";
         grid-template-columns: 1fr 8fr;
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr;
     }
     header {
         grid-area: header;
@@ -332,6 +360,13 @@
 }
 
 @media (min-width: 992px) {
+    /* background photo*/
+    .background-photo {
+        height: 650px;
+        left: 2%;
+        bottom: 10%;
+    }
+
     /* header */
     .header-logo img {
         width: 50px;
@@ -350,18 +385,18 @@
 
     /* section */
     .section-home h1 {
-        font-size: 60px;
+        font-size: 65px;
     }
     #btn-learnMore {
         font-size: 16px;
         bottom: 20%;
     }
     .home-title {
-        padding-top: 2%;
+        padding-top: 0;
         padding-left: 10%;
     }
     #photoCarousel {
-        width: 450px;
+        width: 500px;
         height: 100%;
         right: 8%;
         bottom: 0;
@@ -381,7 +416,7 @@
         "l-side-nav main"
         "l-side-nav footer";
         grid-template-columns: 1fr 8fr;
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr;
     }
     header {
         grid-area: header;
@@ -412,6 +447,13 @@
 }
 
 @media (min-width: 1200px) {
+    /* background photo*/
+    .background-photo {
+        height: 650px;
+        left: 10%;
+        bottom: 10%;
+    }
+
     /* header */
     .header-logo img {
         width: 50px;
@@ -430,14 +472,14 @@
 
     /* section */
     .section-home h1 {
-        font-size: 65px;
+        font-size: 70px;
     }
     #btn-learnMore {
         font-size: 16px;
         bottom: 20%;
     }
     .home-title {
-        padding-top: 2%;
+        padding-top: 0;
         padding-left: 10%;
     }
     #photoCarousel {
@@ -461,7 +503,7 @@
         "l-side-nav main"
         "l-side-nav footer";
         grid-template-columns: 1fr 8fr;
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr;
     }
     header {
         grid-area: header;
@@ -484,7 +526,7 @@
         padding-left: 10%;
     }
     h4.sayings {
-        font-size: 22px;
+        font-size: 20px;
     }
     .blockquote-footer {
         font-size: 12px;
@@ -492,6 +534,13 @@
 }
 
 @media (min-width: 1400px) {
+    /* background photo*/
+    .background-photo {
+        height: 700px;
+        left: 15%;
+        bottom: 10%;
+    }
+
     /* header */
     .header-logo img {
         width: 50px;
@@ -510,20 +559,20 @@
 
     /* section */
     .section-home h1 {
-        font-size: 75px;
+        font-size: 80px;
     }
     #btn-learnMore {
         font-size: 16px;
         bottom: 20%;
     }
     .home-title {
-        padding-top: 2%;
+        padding-top: 0;
         padding-left: 10%;
     }
     #photoCarousel {
-        width: 550px;
+        width: 600px;
         height: 100%;
-        right: 15%;
+        right: 13%;
         bottom: 0;
     }
     .carousel-item { 
@@ -541,7 +590,7 @@
         "l-side-nav main"
         "l-side-nav footer";
         grid-template-columns: 1fr 8fr;
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr;
     }
     header {
         grid-area: header;
@@ -564,7 +613,7 @@
         padding-left: 10%;
     }
     h4.sayings {
-        font-size: 25px;
+        font-size: 22px;
     }
     .blockquote-footer {
         font-size: 14px;
@@ -576,14 +625,9 @@ body, p, h1, h2, h3, h4, h5, h6, a {
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
-
-body {
-    overflow: hidden;
-}
 a {
     text-decoration: none;
 }
-
 .page {
     background-color: #040e20;
     display: flex;
@@ -592,9 +636,7 @@ a {
 
 .background-photo {
     width: auto;
-    height: 100%;
     position: absolute;
-    left: 10%;
     opacity: 12%;
     z-index: 0;
 }
@@ -773,7 +815,8 @@ a {
     width: auto;
     height: auto;
     position: absolute;  
-    bottom: 0;  
+    bottom: 0;
+    right: 0;  
 }
 #btn-learnMore {
     position: absolute;

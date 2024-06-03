@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $('.side-nav li, #btn-learnMore, #btn-return').click(function(){
         if (!($(this).hasClass('active'))){
 			let $this = $(this),
