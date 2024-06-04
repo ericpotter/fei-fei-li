@@ -12,31 +12,31 @@ $(document).ready(function(){
 		}
     });
 
-	// let debounceTimeout;
-	// $(window).on('wheel', function(event){
-	// 	if (debounceTimeout) {
-	// 		clearTimeout(debounceTimeout);
-	// 	}
+	let debounceTimeout;
+	$(window).on('wheel', function(event){
+		if (debounceTimeout) {
+			clearTimeout(debounceTimeout);
+		}
 	
-	// 	debounceTimeout = setTimeout(function() {
-	// 		let delta = event.originalEvent.deltaY,
-	// 			$activeItem = $('.side-nav .active'),
-	// 			curPos = $activeItem.index(),
-	// 			lastItem = $('.side-nav').children().length - 1;
+		debounceTimeout = setTimeout(function() {
+			let delta = event.originalEvent.deltaY,
+				$activeItem = $('.side-nav .active'),
+				curPos = $activeItem.index(),
+				lastItem = $('.side-nav').children().length - 1;
 			
-	// 		let nextPos;
-	// 		if (delta > 0) { // 向下滾動
-	// 			nextPos = (curPos + 1 > lastItem) ? 0 : curPos + 1;
-	// 		} else { // 向上滾動
-	// 			nextPos = (curPos - 1 < 0) ? lastItem : curPos - 1;
-	// 		}
+			let nextPos;
+			if (delta > 0) { // 向下滾動
+				nextPos = (curPos + 1 > lastItem) ? 0 : curPos + 1;
+			} else { // 向上滾動
+				nextPos = (curPos - 1 < 0) ? lastItem : curPos - 1;
+			}
 	
-	// 		let $nextItem = $('.side-nav').children().eq(nextPos);
-	// 		$('.side-nav').children().removeClass('active');
-	// 		$nextItem.addClass('active');
-	// 		updateContent(curPos, nextPos, lastItem);
-	// 	}, 200); // 200毫秒的debounce時間
-	// });
+			let $nextItem = $('.side-nav').children().eq(nextPos);
+			$('.side-nav').children().removeClass('active');
+			$nextItem.addClass('active');
+			updateContent(curPos, nextPos, lastItem);
+		}, 200); // 200毫秒的debounce時間
+	});
 	
     function updateContent(curPos, nextPos, lastItem){ // 頁面更新
 		$('.main').children().removeClass('active');
