@@ -34,8 +34,6 @@
     /* background photo*/
     .background-photo {
         height: 400px;
-        left: -25%;
-        bottom: 15%;
     }
 
     /* header */
@@ -144,8 +142,6 @@
     /* background photo*/
     .background-photo {
         height: 450px;
-        left: -20%;
-        bottom: 13%;
     }
 
     /* header */
@@ -254,8 +250,6 @@
     /* background photo*/
     .background-photo {
         height: 500px;
-        left: -15%;
-        bottom: 15%;
     }
 
     /* header */
@@ -487,8 +481,6 @@
     /* background photo*/
     .background-photo {
         height: 650px;
-        left: 2%;
-        bottom: 10%;
     }
 
     /* header */
@@ -608,8 +600,6 @@
     /* background photo*/
     .background-photo {
         height: 650px;
-        left: 10%;
-        bottom: 10%;
     }
 
     /* header */
@@ -729,8 +719,6 @@
     /* background photo*/
     .background-photo {
         height: 700px;
-        left: 15%;
-        bottom: 10%;
     }
 
     /* header */
@@ -862,10 +850,16 @@ a {
     display: flex;
     align-items: stretch;
 }
-
+.background-img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
 .background-photo {
     width: auto;
-    position: absolute;
     opacity: 12%;
     z-index: 0;
 }
