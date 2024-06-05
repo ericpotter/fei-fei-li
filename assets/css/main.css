@@ -819,7 +819,6 @@ a {
     align-items: center;
     justify-content: center;
     position: absolute;
-    border: solid red;
 }
 .background-photo {
     width: 100%;
