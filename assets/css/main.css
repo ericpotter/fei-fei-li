@@ -861,6 +861,7 @@ a {
     color: white;
     border: none;
     font-size: 25px;
+    position: fixed;
 }
 .btn-right-menu:hover {
     opacity: 100%;
@@ -895,11 +896,9 @@ a {
     width: 100%;
     height: 100vh;
 }
-/* .header {
-    position: fixed;
-    width: 100%;
-    z-index: 0
-} */
+.header {
+    z-index: 3;
+}
 .header-title {
     height: 100%;
 }

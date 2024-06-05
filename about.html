@@ -47,10 +47,22 @@
 
     <div class="left-all">
         <header class="header">
-            <a class="header-logo" href="index.html">
-                <img src="assets/img/logo.png" alt="Female Scientist">
-                <p>Female Scientist</p>
-            </a>
+            <div class="container-fluid header-title">
+                <div class="row header-content">
+                    <div class="col col-logo">
+                        <a class="header-logo" href="index.html">
+                            <img src="assets/img/logo.png" alt="Female Scientist">
+                            <p>Female Scientist</p>
+                        </a>
+                    </div>
+                    <div class="col-3 col-btn-right-menu">
+                        <button class="btn btn-primary btn-right-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#right-menu" aria-controls="right-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
         </header>
 
         <nav class="l-side-nav">
@@ -115,17 +127,13 @@
     </div>
 
     <div class="right-all">
-        <button class="btn btn-right-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#right-menu"
-                aria-controls="right-menu">
-            <i class="fa-solid fa-bars"></i>
-        </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="right-menu" aria-labelledby="offcanvasLabel">
             <div class="offcanvas-header">
             </div>
             <div class="offcanvas-body">
                 <ul class="outer-nav list-unstyled">
                     <li><button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                        <i class="fa-solid fa-angles-left"></i>
+                        <i class="fa-solid fa-xmark"></i>
                     </button></li>
                     <li><a href="index.html"><i class="fa-solid fa-house nav-options"></i>Home</a></li>
                     <li><a href="about.html"><i class="fa-solid fa-user nav-options"></i>About</a></li>
@@ -133,12 +141,13 @@
                     <li><a href="dedication.html"><i class="fa-solid fa-award nav-options"></i>Dedication</a></li>
                     <li><a href="media.html"><i class="fa-solid fa-photo-film nav-options"></i>Media</a></li>
                     <li><a href="interaction.html"><i class="fa-solid fa-hand nav-options"></i>Interaction</a></li>
-                    <li><a href="contact.html"><i class="fa-solid fa-envelope nav-options"></i>Contact</
-                    </ul>
-                </div>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope nav-options"></i>Contact</a></li>
+                    <li><button type="button" class="lang-change btn btn-primary" data-bs-toggle="modal" data-bs-target="#language">
+                        Change Language
+                    </button></li>
+                </ul>
             </div>
         </div>
-
     </div>
 </body>
 </html>
