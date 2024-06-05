@@ -822,9 +822,9 @@ a {
 }
 .background-photo {
     width: 100%;
+    height: auto;
     opacity: 12%;
     z-index: 0;
-    height: auto;
 }
 
 
