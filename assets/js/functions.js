@@ -67,24 +67,7 @@ $(document).ready(function(){
 		});
 	}
 	
-	const translations = {
-		en: {
-			home_title: "Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li",
-		},
-		zh: {
-			home_title: "揭示AI奇蹟 - <br>李飛飛博士",
-		}
-	};
 	
-	function setLanguage(lang) {
-		document.getElementById('home-title').innerHTML = translations[lang].home_title;
-		localStorage.setItem('language', lang); // 將語言設置存儲在localStorage中
-		$('#language').modal('hide'); // 隱藏Modal
-	}
-	
-	// 檢查localStorage中的語言設置
-	const savedLang = localStorage.getItem('language') || 'en'; // 默認語言為英文
-	setLanguage(savedLang);
 	
 
 	
