@@ -73,7 +73,7 @@
                                 <img class="background-photo" src="assets/img/introduction1.jpg" alt="background photo">
                             </div>    
                             <div class="home-title">
-                                <h1 id="home-title">Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li</h1>
+                                <h1 id="home-title"></h1>
                                 <button id="btn-learnMore">
                                     Learn more <i class="fa-solid fa-angles-right"></i>
                                 </button>
@@ -164,7 +164,43 @@
                 </div>
             </div>
         </div>
-        <script src="assets/js/functions.js"></script>
+        <script>
+            const translations = {
+                en: {
+                    homeTitle: "Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li",
+                    learnMore: "Learn more <i class='fa-solid fa-angles-right'></i>",
+                    introTitle: "Trailblazing Journey as Leading Female Scientist",
+                    introDescription: "Fei-Fei Li is a leading Chinese computer scientist specializing in machine learning and artificial intelligence. With roles at Google and Stanford University, she has made significant contributions to computer vision and deep learning research."
+                },
+                zh: {
+                    homeTitle: "揭示<br>AI奇蹟 - <br>李飛飛博士",
+                    learnMore: "了解更多 <i class='fa-solid fa-angles-right'></i>",
+                    introTitle: "作為領先的女性科學家的開創之旅",
+                    introDescription: "李飛飛博士是一位專注於機器學習和人工智慧的領先華裔計算機科學家。她在Google和斯坦福大學擔任重要職務，對計算機視覺和深度學習研究作出了重大貢獻。"
+                }
+            };
+
+            function setLanguage(lang) {
+                document.getElementById('home-title').innerHTML = translations[lang].homeTitle;
+                document.getElementById('btn-learnMore').innerHTML = translations[lang].learnMore;
+                document.getElementById('intro-title').innerHTML = translations[lang].introTitle;
+                document.getElementById('intro-description').innerHTML = translations[lang].introDescription;
+                localStorage.setItem('language', lang); // 將語言設置存儲在localStorage中
+                $('#language').modal('hide'); // 隱藏Modal
+            }
+
+            // 檢查localStorage中的語言設置
+            const savedLang = localStorage.getItem('language') || 'en'; // 默認語言為英文
+            setLanguage(savedLang);
+
+            // 在按鈕上設置事件監聽器
+            document.querySelector('.btn-light[onclick="setLanguage(\'en\')"]').addEventListener('click', function() {
+                setLanguage('en');
+            });
+            document.querySelector('.btn-light[onclick="setLanguage(\'zh\')"]').addEventListener('click', function() {
+                setLanguage('zh');
+            });
+        </script>
     </body>
 </html>
 
