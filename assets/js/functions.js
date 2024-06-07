@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
     $('.side-nav li, #btn-learnMore, #btn-return').click(function(){
         if (!($(this).hasClass('active'))){
 			let $this = $(this),
@@ -67,7 +68,6 @@ $(document).ready(function(){
 		});
 	}
 	
-	
 	const translations = {
         en: {
             homeTitle: "Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li",
@@ -88,21 +88,16 @@ $(document).ready(function(){
         document.getElementById('btn-learnMore').innerHTML = translations[lang].learnMore;
         document.getElementById('intro-title').innerHTML = translations[lang].introTitle;
         document.getElementById('intro-description').innerHTML = translations[lang].introDescription;
-        localStorage.setItem('language', lang); // 將語言設置存儲在localStorage中
-        $('#language').modal('hide'); // 隱藏Modal
     }
 
     // 檢查localStorage中的語言設置
     const savedLang = localStorage.getItem('language') || 'en'; // 默認語言為英文
     setLanguage(savedLang);
 
-    // 在按鈕上設置事件監聽器
-    document.querySelector('.btn-light[onclick="setLanguage(\'en\')"]').addEventListener('click', function() {
-        setLanguage('en');
-    });
-    document.querySelector('.btn-light[onclick="setLanguage(\'zh\')"]').addEventListener('click', function() {
-        setLanguage('zh');
-    });
-
-	
+	$('.btn-en').click(function(){
+		setLanguage('en');
+	})
+	$('.btn-zh').click(function(){
+		setLanguage('zh');
+	});
 })
