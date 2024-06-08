@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
     $('.side-nav li, #btn-learnMore, #btn-return').click(function(){
         if (!($(this).hasClass('active'))){
 			let $this = $(this),
@@ -67,8 +68,41 @@ $(document).ready(function(){
 		});
 	}
 	
+<<<<<<< HEAD
 	
 	
+=======
+	const translations = {
+        en: {
+            homeTitle: "Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li",
+            learnMore: "Learn more <i class='fa-solid fa-angles-right'></i>",
+            introTitle: "Trailblazing Journey as Leading Female Scientist",
+            introDescription: "Fei-Fei Li is a leading Chinese computer scientist specializing in machine learning and artificial intelligence. With roles at Google and Stanford University, she has made significant contributions to computer vision and deep learning research."
+        },
+        zh: {
+            homeTitle: "揭示<br>AI奇蹟 - <br>李飛飛博士",
+            learnMore: "了解更多 <i class='fa-solid fa-angles-right'></i>",
+            introTitle: "作為領先的女性科學家的開創之旅",
+            introDescription: "李飛飛博士是一位專注於機器學習和人工智慧的領先華裔計算機科學家。她在Google和斯坦福大學擔任重要職務，對計算機視覺和深度學習研究作出了重大貢獻。"
+        }
+    };
+>>>>>>> e1ac1ca8f41b860fae064b8aa0905fd483f9563b
 
-	
+    function setLanguage(lang) {
+        document.getElementById('home-title').innerHTML = translations[lang].homeTitle;
+        document.getElementById('btn-learnMore').innerHTML = translations[lang].learnMore;
+        document.getElementById('intro-title').innerHTML = translations[lang].introTitle;
+        document.getElementById('intro-description').innerHTML = translations[lang].introDescription;
+    }
+
+    // 檢查localStorage中的語言設置
+    const savedLang = localStorage.getItem('language') || 'en'; // 默認語言為英文
+    setLanguage(savedLang);
+
+	$('.btn-en').click(function(){
+		setLanguage('en');
+	})
+	$('.btn-zh').click(function(){
+		setLanguage('zh');
+	});
 })
