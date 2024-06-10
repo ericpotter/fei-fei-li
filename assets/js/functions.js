@@ -68,10 +68,6 @@ $(document).ready(function(){
 		});
 	}
 	
-<<<<<<< HEAD
-	
-	
-=======
 	const translations = {
         en: {
             homeTitle: "Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li",
@@ -86,7 +82,6 @@ $(document).ready(function(){
             introDescription: "李飛飛博士是一位專注於機器學習和人工智慧的領先華裔計算機科學家。她在Google和斯坦福大學擔任重要職務，對計算機視覺和深度學習研究作出了重大貢獻。"
         }
     };
->>>>>>> e1ac1ca8f41b860fae064b8aa0905fd483f9563b
 
     function setLanguage(lang) {
         document.getElementById('home-title').innerHTML = translations[lang].homeTitle;
@@ -98,11 +93,4 @@ $(document).ready(function(){
     // 檢查localStorage中的語言設置
     const savedLang = localStorage.getItem('language') || 'en'; // 默認語言為英文
     setLanguage(savedLang);
-
-	$('.btn-en').click(function(){
-		setLanguage('en');
-	})
-	$('.btn-zh').click(function(){
-		setLanguage('zh');
-	});
 })
