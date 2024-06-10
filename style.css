@@ -2,14 +2,11 @@
 
 .timeline {
     display: flex;
-    margin-right: auto;
-    /*直式並列*/
+    margin: 0 auto;
     flex-wrap: wrap;
     flex-direction: column;
-    /*直式並列*/
     max-width: 700px;
-    /*最大寬度*/
-    position: right;
+    position: relative;
 }
 
 /*年份顏色設定*/
@@ -22,8 +19,6 @@
     box-sizing: border-box;
     font-family: "Pathway Gothic One", sans-serif;
     color: #fff;
-    border-width: 5px;
-    border-style: solid;
 }
 
 /*內文文字顏色*/
@@ -35,11 +30,9 @@
     font-family: Cardo;
     font-weight: normal;
     line-height: 25px;
-    border-width: 5px;
-    border-style: solid;
 }
 
-/*
+/*不知道是甚麼*/
 .timeline:before {
     position: absolute;
     left: 50%;
@@ -48,7 +41,7 @@
     margin-left: -1px;
     content: "";
     background: rgba(255, 255, 255, 0.07);
-}*/
+}
 
 @media only screen and (max-width: 767px) {
     .timeline:before {
@@ -56,9 +49,7 @@
     }
 }
 
-
 .timeline-item {
-    /*內元素與邊界的距離-上下.左右*/
     padding: 40px 0;
     opacity: 0.3;
     filter: blur(2px);
@@ -66,16 +57,15 @@
     box-sizing: border-box;
     width: calc(50% - 40px);
     display: flex;
-    position: right;
+    position: relative;
     transform: translateY(-80px);
 }
 
-/*timeline word color&border color of left*/
 .timeline-item:before {
     content: attr(data-text);
     letter-spacing: 3px;
     width: 100%;
-    position: right;
+    position: absolute;
     color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
     font-family: "Pathway Gothic One", sans-serif;
@@ -101,17 +91,14 @@
     padding-right: 15px;
 }
 
-/*轉場-到一個定點時好好停在上面*/
 .timeline-item--active {
     opacity: 1;
     transform: translateY(0);
-    /*模糊效果*/
     filter: blur(0px);
 }
 
-/*轉場-切換前*/
 .timeline-item--active:before {
-    top: 100%;
+    top: 50%;
     transition: 0.3s all 0.2s;
     opacity: 1;
 }
@@ -119,7 +106,6 @@
 .timeline-item--active .timeline__content-title {
     margin: -50px 0 20px 0;
 }
-
 
 @media only screen and (max-width: 767px) {
     .timeline-item {
@@ -144,11 +130,10 @@
 
 /*照片下的影子*/
 .timeline__img {
-    max-width: 30%;
+    max-width: 100%;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
 
-/*網頁背景*/
 .timeline-container {
     width: 100%;
     position: relative;
@@ -165,6 +150,47 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: #040120;
+    background-color: transparent;
+    /* background: #040120; */
     content: "";
+}
+
+/*頂標:fei-fei li文字設定(?*/
+.timeline-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+/*頂標:fei-fei li顏色*/
+.timeline-header__title {
+    color: #fff;
+    font-size: 46px;
+    font-family: Cardo;
+    font-weight: normal;
+    margin: 0;
+}
+
+/*次標:LIFE STORY OF HER*/
+.timeline-header__subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin: 10px 0 0 0;
+    font-weight: normal;
+}
+
+/*網頁底部文字:Source/Kaynak*/
+.demo-footer {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/*網頁底部文字:Source/Kaynak顏色設定*/
+.demo-footer a {
+    color: #132648;
+    display: inline-block;
+    font-family: Cardo;
 }
