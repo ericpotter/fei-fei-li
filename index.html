@@ -14,16 +14,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Resource -->
     <script src="assets/js/functions.js"></script>
@@ -42,6 +37,11 @@
 
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- Chinese Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
 
 </head>
 
@@ -107,15 +107,15 @@
                                 <blockquote class="blockquote">
                                     <h4 class="sayings">
                                         <ul class="texts list-unstyled">
-                                            <li>China is a dormant lion. When it stirs, the world will stand in awe.
+                                            <li id="saying-1">China is a dormant lion. When it stirs, the world will stand in awe.
                                             </li>
-                                            <li>Empower computers with visual intelligence, and create a brighter future for children and the world.
+                                            <li id="saying-2">Empower computers with visual intelligence, and create a brighter future for children and the world.
                                             </li>
                                         </ul>
                                     </h4>
                                 </blockquote>
-                                <figcaption class="blockquote-footer">
-                                    Dr. Fei-Fei Li in <cite title="Source Title">Google Developer Day</cite>
+                                <figcaption class="blockquote-footer" id="author">
+                                    Dr. Fei-Fei Li in <cite title="Source Title" id="source-title">Google Developer Day</cite>
                                 </figcaption>
                             </figure>
                         </footer>
@@ -126,9 +126,7 @@
                     <div class="section-intro">
                         <div class="texts">
                             <h1 id="intro-title"><strong>Trailblazing Journey as Leading Female Scientist</strong></h1>
-                            <p id="intro-description"><em>Fei-Fei Li is a leading Chinese computer scientist specializing in machine learning
-                                    and artificial intelligence. With roles at Google and Stanford University, she has
-                                    made significant contributions to computer vision and deep learning research.</em>
+                            <p id="intro-description"><em>Fei-Fei Li is a leading Chinese computer scientist specializing in machine learning and artificial intelligence. With roles at Google and Stanford University, she has made significant contributions to computer vision and deep learning research.</em>
                             </p>
                         </div>
                     </div>
@@ -171,18 +169,15 @@
                 <div class="offcanvas-header"></div>
                 <div class="offcanvas-body">
                     <ul class="outer-nav list-unstyled">
-                        <li><button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"><i class="fa-solid fa-xmark"></i></button></li>
-                        <li><a href="index.html"><i class="fa-solid fa-house nav-options"></i>Home</a></li>
-                        <li><a href="about.html"><i class="fa-solid fa-user nav-options"></i>About</a></li>
-                        <li><a href="introduction.html"><i
-                                    class="fa-solid fa-address-card nav-options"></i>Introduction</a></li>
-                        <li><a href="dedication.html"><i class="fa-solid fa-award nav-options"></i>Dedication</a></li>
-                        <li><a href="media.html"><i class="fa-solid fa-photo-film nav-options"></i>Media</a></li>
-                        <li><a href="interaction.html"><i class="fa-solid fa-hand nav-options"></i>Interaction</a></li>
-                        <li><a href="contact.html"><i class="fa-solid fa-envelope nav-options"></i>Contact</a></li>
-                        <li><button type="button" class="lang-change btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#language">Change Language </button></li>
+                        <li><button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button></li>
+                        <li id="right-home"><a href="index.html"><i class="fa-solid fa-house nav-options"></i>Home</a></li>
+                        <li id="right-about"><a href="about.html"><i class="fa-solid fa-user nav-options"></i>About</a></li>
+                        <li id="right-dedication"><a href="dedication.html"><i class="fa-solid fa-award nav-options"></i>Dedication</a></li>
+                        <li id="right-media"><a href="media.html"><i class="fa-solid fa-photo-film nav-options"></i>Media</a></li>
+                        <li id="right-contact"><a href="contact.html"><i class="fa-solid fa-envelope nav-options"></i>Contact</a></li>
+                        <li id="lang-change"><button type="button" class="lang-change btn btn-primary" data-bs-toggle="modal" data-bs-target="#language">Change Language</button></li>
                     </ul>
                 </div>
             </div>
@@ -191,7 +186,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Choose a language</h5>
+                        <h5 class="modal-title" id="modal-title">Choose a language</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body mx-auto">
