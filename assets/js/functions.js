@@ -111,6 +111,7 @@ function setLanguage(lang) {
 	document.getElementById('btn-learnMore').innerHTML = translations[lang].learnMore;
 	document.getElementById('intro-title').innerHTML = translations[lang].introTitle;
 	document.getElementById('intro-description').innerHTML = translations[lang].introDescription;
+	document.getElementById('header-title').innerHTML = translations[lang].headerTitle;
 	document.getElementById('l-side-nav-home').innerHTML = translations[lang].lSideNavHome;
 	document.getElementById('l-side-nav-intro').innerHTML = translations[lang].lSideNavIntro;
 	document.getElementById('l-side-nav-life').innerHTML = translations[lang].lSideNavLife;
