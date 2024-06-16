@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
 .timeline {
     display: flex;
     margin: 0 auto;
@@ -11,13 +13,13 @@
 
 /*年份顏色設定*/
 .timeline__content-title {
-    font-weight: normal;
-    font-size: 66px;
+    font-weight: Bold;
+    font-size: 60px;
     margin: -10px 0 0 0;
     transition: 0.4s;
     padding: 0 10px;
     box-sizing: border-box;
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
 
@@ -27,7 +29,7 @@
     font-size: 15px;
     box-sizing: border-box;
     color: rgba(255, 255, 255, 0.7);
-    font-family: Cardo;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     line-height: 25px;
 }
@@ -68,7 +70,7 @@
     position: absolute;
     color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border-left: 2px solid rgba(255, 255, 255, 0.5);
     top: 70%;
     margin-top: -5px;
@@ -153,44 +155,4 @@
     background-color: transparent;
     /* background: #040120; */
     content: "";
-}
-
-/*頂標:fei-fei li文字設定(?*/
-.timeline-header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 80px;
-    position: relative;
-}
-
-/*頂標:fei-fei li顏色*/
-.timeline-header__title {
-    color: #fff;
-    font-size: 46px;
-    font-family: Cardo;
-    font-weight: normal;
-    margin: 0;
-}
-
-/*次標:LIFE STORY OF HER*/
-.timeline-header__subtitle {
-    color: rgba(255, 255, 255, 0.5);
-    font-family: "Pathway Gothic One", sans-serif;
-    font-size: 16px;
-    letter-spacing: 5px;
-    margin: 10px 0 0 0;
-    font-weight: normal;
-}
-
-/*網頁底部文字:Source/Kaynak*/
-.demo-footer {
-    padding: 60px 0;
-    text-align: center;
-}
-
-/*網頁底部文字:Source/Kaynak顏色設定*/
-.demo-footer a {
-    color: #132648;
-    display: inline-block;
-    font-family: Cardo;
 }
