@@ -30,6 +30,7 @@
     font-weight: 300;
     font-style: normal
 }
+
 .lxgw-wenkai-mono-tc-regular {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 400;
@@ -109,7 +110,7 @@
         bottom: 0;
     }
 
-    .carousel-item {
+    .photo-item {
         left: 40px;
     }
 
@@ -234,7 +235,7 @@
         bottom: 0;
     }
 
-    .carousel-item {
+    .photo-item {
         left: 40px;
     }
 
@@ -361,7 +362,7 @@
         bottom: 0;
     }
 
-    .carousel-item {
+    .photo-item {
         left: 0;
         right: 0;
     }
@@ -492,7 +493,7 @@
         bottom: 0;
     }
 
-    .carousel-item {
+    .photo-item {
         left: 0;
         right: 0;
     }
@@ -549,11 +550,11 @@
     }
 
     h4.sayings {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .blockquote-footer {
-        font-size: 9px;
+        font-size: 7px;
     }
 
 
@@ -632,7 +633,7 @@
         bottom: 0;
     }
 
-    .carousel-item {
+    .photo-item {
         left: 0;
         right: 0;
     }
@@ -689,11 +690,11 @@
     }
 
     h4.sayings {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .blockquote-footer {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
@@ -769,7 +770,7 @@
         bottom: 0;
     }
 
-    .carousel-item {
+    .photo-item {
         left: 0;
         right: 0;
     }
@@ -826,11 +827,11 @@
     }
 
     h4.sayings {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .blockquote-footer {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
@@ -906,7 +907,7 @@
         bottom: 0;
     }
 
-    .carousel-item {
+    .photo-item {
         left: 0;
         right: 0;
     }
@@ -1192,11 +1193,11 @@ a {
     position: absolute;
 }
 
-.carousel-inner {
+.photo-inner {
     height: 100%;
 }
 
-.carousel-item {
+.photo-item {
     height: 100%;
     max-height: 100%;
     max-width: 100%;
@@ -1281,5 +1282,56 @@ a {
     100% {
         opacity: 1;
     }
+<<<<<<< Updated upstream
 
+=======
+<<<<<<< HEAD
+}
+
+/* Media */
+.section-media {
+
+}
+.video-container {
+    align-items: center;
+    justify-content: center;
+}
+.carousel__video-wrapper {
+    width: 400px; /* Diameter of the circular video */
+    height: 400px; /* Diameter of the circular video */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__caption {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.prev-icon,
+.next-icon {
+    background: #8d8d8d;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+}
+.btn-video-prev, .btn-video-next {
+    font-size: 40px;
+    color: white;
+    align-content: center;
+    padding-left: 18px;
+=======
+
+>>>>>>> 02491e99a92aebd0fc4ffbda7e3c74b995d18d7a
+>>>>>>> Stashed changes
 }
