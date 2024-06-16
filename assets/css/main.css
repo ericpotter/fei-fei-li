@@ -30,6 +30,12 @@
     font-weight: 300;
     font-style: normal
 }
+.lxgw-wenkai-mono-tc-regular {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 
 /* 手機優先 */
@@ -975,7 +981,7 @@ h4,
 h5,
 h6,
 a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat',"LXGW WenKai Mono TC", sans-serif;
     color: white;
 }
 
@@ -1007,7 +1013,6 @@ a {
     opacity: 12%;
     z-index: 0;
 }
-
 
 
 /* right features */
@@ -1229,8 +1234,7 @@ a {
 .texts {
     display: block;
     align-content: center;
-    padding-left: 5%;
-
+    padding-left: 3%;
 }
 
 /* footer */
@@ -1247,14 +1251,14 @@ a {
 
 /* contact */
 .contact-set {
-    margin-left: 30px;
+    margin-left: 10%;
     margin-right: 15%;
     animation: down 1.5s;
 }
 
 /* dedication */
 .dedication-set {
-    margin-left: 30px;
+    margin-left: 10%;
     margin-right: 15%;
     animation: down 1.5s;
 }
@@ -1265,10 +1269,7 @@ a {
     transform-origin: left bottom;
 }
 
-.contact-set p {
-    opacity: 0;
-    transform: translateY(20px);
-}
+
 
 
 
