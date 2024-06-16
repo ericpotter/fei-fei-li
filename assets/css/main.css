@@ -30,7 +30,6 @@
     font-weight: 300;
     font-style: normal
 }
-
 .lxgw-wenkai-mono-tc-regular {
     font-family: "LXGW WenKai Mono TC", monospace;
     font-weight: 400;
@@ -41,15 +40,6 @@
 
 /* 手機優先 */
 @media (min-width: 340px) {
-
-    #timeline-1 {
-        display: block;
-        margin-top: 150%;
-    }
-
-    #historyIframe {
-        display: none;
-    }
 
     /* header */
     .header-logo img {
@@ -164,17 +154,17 @@
     .blockquote-footer {
         font-size: 7px;
     }
+
+    /* .section-timeiine {
+        top: 500px
+    }
+
+    .section-timeiine2 {
+        top: 900px
+    } */
 }
 
 @media (min-width: 467px) {
-    #timeline-1 {
-        display: block;
-        margin-top: 150%;
-    }
-
-    #historyIframe {
-        display: none;
-    }
 
     /* header */
     .header-logo img {
@@ -289,19 +279,9 @@
     .blockquote-footer {
         font-size: 7px;
     }
-
-
 }
 
 @media (min-width: 576px) {
-    #timeline-1 {
-        display: block;
-        margin-top: 150%;
-    }
-
-    #historyIframe {
-        display: none;
-    }
 
     /* header */
     .header-logo img {
@@ -418,17 +398,9 @@
         font-size: 8px;
     }
 
-
 }
 
 @media (min-width: 768px) {
-    #historyIframe {
-        display: block;
-    }
-
-    #timeline-1 {
-        display: none;
-    }
 
     /* header */
     .header-logo img {
@@ -550,25 +522,15 @@
     }
 
     h4.sayings {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .blockquote-footer {
-        font-size: 7px;
+        font-size: 9px;
     }
-
-
-
 }
 
 @media (min-width: 992px) {
-    #historyIframe {
-        display: block;
-    }
-
-    #timeline-1 {
-        display: none;
-    }
 
     /* header */
     .header-logo img {
@@ -690,22 +652,15 @@
     }
 
     h4.sayings {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .blockquote-footer {
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 
 @media (min-width: 1200px) {
-    #historyIframe {
-        display: block;
-    }
-
-    #timeline-1 {
-        display: none;
-    }
 
     /* header */
     .header-logo img {
@@ -827,22 +782,15 @@
     }
 
     h4.sayings {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .blockquote-footer {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
 @media (min-width: 1400px) {
-    #historyIframe {
-        display: block;
-    }
-
-    #timeline-1 {
-        display: none;
-    }
 
     /* header */
     .header-logo img {
@@ -1252,14 +1200,14 @@ a {
 
 /* contact */
 .contact-set {
-    margin-left: 10%;
+    margin-left: 30px;
     margin-right: 15%;
     animation: down 1.5s;
 }
 
 /* dedication */
 .dedication-set {
-    margin-left: 10%;
+    margin-left: 30px;
     margin-right: 15%;
     animation: down 1.5s;
 }
@@ -1270,9 +1218,10 @@ a {
     transform-origin: left bottom;
 }
 
-
-
-
+.contact-set p {
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 @keyframes down {
     0% {
@@ -1282,10 +1231,6 @@ a {
     100% {
         opacity: 1;
     }
-<<<<<<< Updated upstream
-
-=======
-<<<<<<< HEAD
 }
 
 /* Media */
@@ -1330,8 +1275,4 @@ a {
     color: white;
     align-content: center;
     padding-left: 18px;
-=======
-
->>>>>>> 02491e99a92aebd0fc4ffbda7e3c74b995d18d7a
->>>>>>> Stashed changes
 }

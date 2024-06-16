@@ -67,7 +67,6 @@ $(document).ready(function(){
 			loop: true
 		});
 	}
-	// Language Change
 	// 在按鈕上設置事件監聽器
 	document.querySelector('.btn-light[onclick="setLanguage(\'en\')"]').addEventListener('click', function() {
 		setLanguage('en');
@@ -75,11 +74,10 @@ $(document).ready(function(){
 	document.querySelector('.btn-light[onclick="setLanguage(\'zh\')"]').addEventListener('click', function() {
 		setLanguage('zh');
 	});
-
 	// Media
-	$('#videoCarousel').carousel({
-		interval: false
-	});
+    $('#videoCarousel').carousel({
+        interval: false
+    });
 });
 
 // lang change
