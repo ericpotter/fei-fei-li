@@ -1276,9 +1276,9 @@ a {
 }
 
 .carousel__video-wrapper {
-    width: 400px;
+    width: 728px;
     /* Diameter of the circular video */
-    height: 400px;
+    height: 410px;
     /* Diameter of the circular video */
     border-radius: 50%;
     overflow: hidden;
