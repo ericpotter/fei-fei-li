@@ -1,191 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>AI Pioneer - Fei-Fei Li</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta name="description" content="Female Scientist - Fei-Fei Li">
-        <meta name="keywords" content="Scientist, Fei-Fei Li, Female Scientist">
-        <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+<head>
+    <title>AI Pioneer - Fei-Fei Li</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Female Scientist - Fei-Fei Li">
+    <meta name="keywords" content="Scientist, Fei-Fei Li, Female Scientist">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
 
 
-        <!-- JQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-        <!-- bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-            crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-        <!-- fontawesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- Resource -->
-        <script src="assets/js/functions.js"></script>
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="./style.css">
+    <!-- Resource -->
+    <script src="assets/js/functions.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
 
 
-        <!-- Animate.css v3.5.2 -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
+    <!-- Animate.css v3.5.2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
 
-        <!-- lettering.js v0.7.0 -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <!-- lettering.js v0.7.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
 
-        <!-- Textillate.js v0.4.0 -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+    <!-- Textillate.js v0.4.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
 
-        <!-- GSAP -->
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-        <!-- Chinese Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+    <!-- Chinese Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
-        <div class="page">
-            <div class="left-all">  
-                <header class="header">
-                    <div class="container-fluid header-title">
-                        <div class="row header-content">
-                            <div class="col col-logo">
-                                <a class="header-logo" href="index.html">
-                                    <img src="assets/img/logo.png" alt="Female Scientist">
-                                    <p id="header-title">Female Scientist</p>
-                                </a>
-                            </div>
-                            <div class="col-3 col-btn-right-menu">
-                                <button class="btn btn-primary btn-right-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#right-menu" aria-controls="right-menu">
-                                    <i class="fa-solid fa-bars"></i>
-                                </button>
+</head>
+
+<body>
+    <div class="page">
+        <div class="left-all">
+            <header class="header">
+                <div class="container-fluid header-title">
+                    <div class="row header-content">
+                        <div class="col col-logo">
+                            <a class="header-logo" href="index.html">
+                                <img src="assets/img/logo.png" alt="Female Scientist">
+                                <p id="header-title">Female Scientist</p>
+                            </a>
+                        </div>
+                        <div class="col-3 col-btn-right-menu">
+                            <button class="btn btn-primary btn-right-menu" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#right-menu" aria-controls="right-menu">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+
+            <nav class="l-side-nav">
+                <ul class="side-nav list-unstyled">
+                    <li class="active"><span>Social media</span></li>
+                    <li><span>Contact</span></li>
+                </ul>
+            </nav>
+            <ul class="main list-unstyled">
+
+                <li class="section active">
+                    <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="5000">
+                        <div class="photo-inner carousel-inner">
+                            <div class="photo-item carousel-item active">
+                                <img src="assets/img/photo1.png" class="d-block w-100" alt="Dr. fei fei li">
                             </div>
                         </div>
-                        
                     </div>
-                </header>
-
-                <nav class="l-side-nav">
-                    <ul class="side-nav list-unstyled">
-                        <li class="active"><span>Social media</span></li>
-                        <li><span>Contact</span></li>
-                    </ul>
-                </nav>
-                <ul class="main list-unstyled">
-                 
-                    <li class="section active">   
-                        <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                            data-bs-interval="5000">
-                            <div class="photo-inner carousel-inner">
-                                <div class="photo-item carousel-item active">
-                                    <img src="assets/img/photo1.png" class="d-block w-100" alt="Dr. fei fei li">
-                                </div>
+                    <div class="#">
+                        <div class="contact-set">
+                            <a class="twitter-timeline" data-lang="en" data-width="400" data-height="500"
+                                data-theme="dark" href="https://twitter.com/drfeifei?ref_src=twsrc%5Etfw">Loading
+                                tweets...</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </li>
+                <li class="section">
+                    <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="5000">
+                        <div class="photo-inner carousel-inner">
+                            <div class="photo-item carousel-item active">
+                                <img src="assets/img/photo2.png" class="d-block w-100" alt="Dr. fei fei li">
                             </div>
-                        </div>      
-                        <div class="#">               
-                            <div class="contact-set">
-                                <a class="twitter-timeline" data-lang="en" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/drfeifei?ref_src=twsrc%5Etfw">Loading tweets...</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>             
-                            </div>
-                        </div> 
-                    </li>
-                    <li class="section">
-                        <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                            data-bs-interval="5000">
-                            <div class="photo-inner carousel-inner">
-                                <div class="photo-item carousel-item active">
-                                    <img src="assets/img/photo2.png" class="d-block w-100" alt="Dr. fei fei li">
-                                </div>
-                            </div>
-                        </div>         
-                        <div class="#">
-                            <div class="contact-set">
-                            <h1>How to contact Dr. Fei-Fei Li ?</h1>                           
-                            <a href="mailto:feifeili@stanford.edu" target="_blank" style="font-size: 22px">Mail: feifeili@stanford.edu<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                            </svg></a>                                        
+                        </div>
+                    </div>
+                    <div class="#">
+                        <div class="contact-set">
+                            <h1>How to contact Dr. Fei-Fei Li ?</h1>
+                            <a href="mailto:feifeili@stanford.edu" target="_blank" style="font-size: 22px">Mail:
+                                feifeili@stanford.edu<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                    fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                </svg></a>
                             <p>Department: Computer Science<br>
-                               Position: Professor<br>
-                               Department: Human-Centered Artificial Intelligence<br>
-                               Position: Senior Fellow<br>
-                               650-497-9873 (office)</p>
+                                Position: Professor<br>
+                                Department: Human-Centered Artificial Intelligence<br>
+                                Position: Senior Fellow<br>
+                                650-497-9873 (office)</p>
                             <h1>LINK</h1>
-                                <a href=https://x.com/drfeifei target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                                  </svg></a>
-                                <a href=https://www.linkedin.com/in/fei-fei-li-4541247/ target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                                  </svg></a><br>                                              
-                            </div>
-                        </div> 
-                    </li> 
-                </ul>
-
-                <footer class="footer">
-                    <figure class="text-start">
-                        <blockquote class="blockquote">
-                            <h2 class="sayings">
-                                <ul class="texts list-unstyled">
-                                    <li id="saying-1">How to contact Dr. Fei-Fei Li ?
-                                    </li>
-                                    <li id="saying-2">Mail: feifeili@stanford.edu
-                                    </li>
-                                    <li id="saying-3">X(twitter): @drfeifei                                               
-                                    </li>
-                                    <li id="saying-4">Linkedin: Fei-Fei Li                                               
-                                    </li>
-                                </ul>
-                            </h2>
-                        </blockquote>
-                        </figure>  
-                </footer>
-            </div>
-
-            <div class="right-all">
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="right-menu" aria-labelledby="offcanvasLabel">
-                    <div class="offcanvas-header"></div>
-                    <div class="offcanvas-body">
-                        <ul class="outer-nav list-unstyled">
-                            <li><button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button></li>
-                            <li id="right-home"><a href="index.html"><i class="fa-solid fa-house nav-options"></i>Home</a>
-                            </li>
-                            <li id="right-about"><a href="about.html"><i class="fa-solid fa-user nav-options"></i>About</a>
-                            </li>
-                            <li id="right-dedication"><a href="dedication.html"><i
-                                        class="fa-solid fa-award nav-options"></i>Dedication</a></li>
-                            <li id="right-contact"><a href="contact.html"><i
-                                        class="fa-solid fa-envelope nav-options"></i>Contact</a></li>
-                            <li id="lang-change"><button type="button" class="lang-change btn btn-primary"
-                                    data-bs-toggle="modal" data-bs-target="#language">Change Language</button></li>
-                        </ul>
+                            <a href=https://x.com/drfeifei target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="35" height="35" fill="currentColor" class="bi bi-twitter-x"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                                </svg></a>
+                            <a href=https://www.linkedin.com/in/fei-fei-li-4541247/ target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                </svg></a><br>
+                        </div>
                     </div>
+                </li>
+            </ul>
+
+            <footer class="footer">
+                <figure class="text-start">
+                    <blockquote class="blockquote">
+                        <h2 class="sayings">
+                            <ul class="texts list-unstyled">
+                                <li id="saying-1">How to contact Dr. Fei-Fei Li ?
+                                </li>
+                                <li id="saying-2">Mail: feifeili@stanford.edu
+                                </li>
+                                <li id="saying-3">X(twitter): @drfeifei
+                                </li>
+                                <li id="saying-4">Linkedin: Fei-Fei Li
+                                </li>
+                            </ul>
+                        </h2>
+                    </blockquote>
+                </figure>
+            </footer>
+        </div>
+
+        <div class="right-all">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="right-menu" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header"></div>
+                <div class="offcanvas-body">
+                    <ul class="outer-nav list-unstyled">
+                        <li><button type="button" class="btn-menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button></li>
+                        <li id="right-home"><a href="index.html"><i class="fa-solid fa-house nav-options"></i>Home</a>
+                        </li>
+                        <li id="right-about"><a href="about.html"><i class="fa-solid fa-user nav-options"></i>About</a>
+                        </li>
+                        <li id="right-dedication"><a href="life.html"><i
+                                    class="fa-solid fa-award nav-options"></i>Life</a>
+                        </li>
+                        <li id="right-dedication"><a href="dedication.html"><i
+                                    class="fa-solid fa-award nav-options"></i>Dedication</a></li>
+                        <li id="right-contact"><a href="contact.html"><i
+                                    class="fa-solid fa-envelope nav-options"></i>Contact</a></li>
+                        <li id="lang-change"><button type="button" class="lang-change btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target="#language">Change Language</button></li>
+                    </ul>
                 </div>
             </div>
-            <div class="modal fade" id="language" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modal-title">Choose a language</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body mx-auto">
-                            <button type="button" class="btn btn-light btn-en" onclick="setLanguage('en')">English</button>
-                            <button type="button" class="btn btn-light btn-zh" onclick="setLanguage('zh')">繁體中文</button>
-                        </div>
+        </div>
+        <div class="modal fade" id="language" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Choose a language</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body mx-auto">
+                        <button type="button" class="btn btn-light btn-en" onclick="setLanguage('en')">English</button>
+                        <button type="button" class="btn btn-light btn-zh" onclick="setLanguage('zh')">繁體中文</button>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-        <script src="https://mediafiles.botpress.cloud/fad0198c-9145-43f0-8798-b762afd5e765/webchat/config.js" defer></script>
-    </body>
-</html>
+    </div>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/fad0198c-9145-43f0-8798-b762afd5e765/webchat/config.js"
+        defer></script>
+</body>
 
+</html>
