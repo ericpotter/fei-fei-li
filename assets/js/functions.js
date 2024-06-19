@@ -98,6 +98,7 @@ const translations = {
 		saying2: "Empower computers with visual intelligence, and create a brighter future for children and the world.",
 		author: "Dr. Fei-Fei Li in <cite title=\"Source Title\" id=\"source-title\">Google Developer Day</cite>",
 		rightHome: "<a href=\"index.html\"><i class=\"fa-solid fa-house nav-options\"></i>Home</a>",
+		rightLife: "<a href=\"life.html\"><i class=\"fa-solid fa-address-card nav-options\"></i>Life</a>",
 		rightDedictation: "<a href=\"dedication.html\"><i class=\"fa-solid fa-award nav-options\"></i>Dedication</a>",
 		rightMedia: "<a href=\"media.html\"><i class=\"fa-solid fa-photo-film nav-options\"></i>Media</a>",
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>Contact</a>",
@@ -120,6 +121,7 @@ const translations = {
 		saying2: "為電腦賦予視覺智能，為兒童和世界創造更美好的未來。",
 		author: "李飛飛博士 <cite title=\"Source Title\" id=\"source-title\">Google開發者日</cite>",
 		rightHome: "<a href=\"index.html\"><i class=\"fa-solid fa-house nav-options\"></i>首頁</a>",
+		rightLife: "<a href=\"life.html\"><i class=\"fa-solid fa-address-card nav-options\"></i>生平</a>",
 		rightDedictation: "<a href=\"dedication.html\"><i class=\"fa-solid fa-award nav-options\"></i>貢獻</a>",
 		rightMedia: "<a href=\"media.html\"><i class=\"fa-solid fa-photo-film nav-options\"></i>媒體</a>",
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>聯絡資訊</a>",
@@ -142,6 +144,7 @@ function setLanguage(lang) {
 	document.getElementById('saying-2').innerHTML = translations[lang].saying2;
 	document.getElementById('author').innerHTML = translations[lang].author;
 	document.getElementById('right-home').innerHTML = translations[lang].rightHome;
+	document.getElementById('right-life').innerHTML = translations[lang].rightLife;
 	document.getElementById('right-dedication').innerHTML = translations[lang].rightDedictation;
 	document.getElementById('right-contact').innerHTML = translations[lang].rightContact;
 	document.getElementById('lang-change').innerHTML = translations[lang].langChange;
