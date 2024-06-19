@@ -85,8 +85,8 @@ const translations = {
 	en: {
 		homeTitle: "Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li",
 		learnMore: "Learn more <i class='fa-solid fa-angles-right'></i>",
-		introTitle: "Trailblazing Journey as Leading Female Scientist",
-		introDescription: "Fei-Fei Li is a leading Chinese computer scientist specializing in machine learning and artificial intelligence. With roles at Google and Stanford University, she has made significant contributions to computer vision and deep learning research.",
+		introTitle: "<strong>Trailblazing Journey as Leading Female Scientist</strong>",
+		introDescription: "<em>Fei-Fei Li is a leading Chinese computer scientist specializing in machine learning and artificial intelligence. With roles at Google and Stanford University, she has made significant contributions to computer vision and deep learning research.</em>",
 		headerTitle: "Female Scientist",
 		lSideNavHome: "Home",
 		lSideNavIntro: "Intro",
@@ -98,7 +98,6 @@ const translations = {
 		saying2: "Empower computers with visual intelligence, and create a brighter future for children and the world.",
 		author: "Dr. Fei-Fei Li in <cite title=\"Source Title\" id=\"source-title\">Google Developer Day</cite>",
 		rightHome: "<a href=\"index.html\"><i class=\"fa-solid fa-house nav-options\"></i>Home</a>",
-		rightAbout: "<a href=\"about.html\"><i class=\"fa-solid fa-user nav-options\"></i>About</a>",
 		rightDedictation: "<a href=\"dedication.html\"><i class=\"fa-solid fa-award nav-options\"></i>Dedication</a>",
 		rightMedia: "<a href=\"media.html\"><i class=\"fa-solid fa-photo-film nav-options\"></i>Media</a>",
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>Contact</a>",
@@ -108,8 +107,8 @@ const translations = {
 	zh: {
 		homeTitle: "揭示<br>AI奇蹟 - <br>李飛飛博士",
 		learnMore: "了解更多 <i class='fa-solid fa-angles-right'></i>",
-		introTitle: "作為領先的女性科學家的開創之旅",
-		introDescription: "李飛飛博士是一位專注於機器學習和人工智慧的領先華裔計算機科學家。她在Google和斯坦福大學擔任重要職務，對計算機視覺和深度學習研究作出了重大貢獻。",
+		introTitle: "<strong>作為領先的女性科學家的開創之旅</strong>",
+		introDescription: "<em>李飛飛博士是一位專注於機器學習和人工智慧的領先華裔計算機科學家。她在Google和斯坦福大學擔任重要職務，對計算機視覺和深度學習研究作出了重大貢獻。</em>",
 		headerTitle: "傑出女性科學家",
 		lSideNavHome: "主頁",
 		lSideNavIntro: "簡介",
@@ -121,7 +120,6 @@ const translations = {
 		saying2: "為電腦賦予視覺智能，為兒童和世界創造更美好的未來。",
 		author: "李飛飛博士 <cite title=\"Source Title\" id=\"source-title\">Google開發者日</cite>",
 		rightHome: "<a href=\"index.html\"><i class=\"fa-solid fa-house nav-options\"></i>首頁</a>",
-		rightAbout: "<a href=\"about.html\"><i class=\"fa-solid fa-user nav-options\"></i>關於</a>",
 		rightDedictation: "<a href=\"dedication.html\"><i class=\"fa-solid fa-award nav-options\"></i>貢獻</a>",
 		rightMedia: "<a href=\"media.html\"><i class=\"fa-solid fa-photo-film nav-options\"></i>媒體</a>",
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>聯絡資訊</a>",
@@ -138,17 +136,13 @@ function setLanguage(lang) {
 	document.getElementById('header-title').innerHTML = translations[lang].headerTitle;
 	document.getElementById('l-side-nav-home').innerHTML = translations[lang].lSideNavHome;
 	document.getElementById('l-side-nav-intro').innerHTML = translations[lang].lSideNavIntro;
-	document.getElementById('l-side-nav-life').innerHTML = translations[lang].lSideNavLife;
-	document.getElementById('l-side-nav-dedication').innerHTML = translations[lang].lSideNavDedication;
 	document.getElementById('l-side-nav-media').innerHTML = translations[lang].lSideNavMedia;
 	document.getElementById('l-side-nav-about').innerHTML = translations[lang].lSideNavAbout;
 	document.getElementById('saying-1').innerHTML = translations[lang].saying1;
 	document.getElementById('saying-2').innerHTML = translations[lang].saying2;
 	document.getElementById('author').innerHTML = translations[lang].author;
 	document.getElementById('right-home').innerHTML = translations[lang].rightHome;
-	document.getElementById('right-about').innerHTML = translations[lang].rightAbout;
 	document.getElementById('right-dedication').innerHTML = translations[lang].rightDedictation;
-	document.getElementById('right-media').innerHTML = translations[lang].rightMedia;
 	document.getElementById('right-contact').innerHTML = translations[lang].rightContact;
 	document.getElementById('lang-change').innerHTML = translations[lang].langChange;
 	document.getElementById('modal-title').innerHTML = translations[lang].modalTitle;
