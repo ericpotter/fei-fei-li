@@ -153,7 +153,7 @@ function setLanguage(lang) {
 	document.getElementById('right-contact').innerHTML = translations[lang].rightContact;
 	document.getElementById('lang-change').innerHTML = translations[lang].langChange;
 	document.getElementById('modal-title').innerHTML = translations[lang].modalTitle;
-	document.getElementById('timelinefollowtitle').innerHTML = translations[lang].timelineFollowTitle;
+
 }
 
 // 檢查localStorage中的語言設置
