@@ -104,6 +104,7 @@ const translations = {
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>Contact</a>",
 		langChange: "<button type=\"button\" class=\"lang-change btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#language\">Change Language</button>",
 		modalTitle: "Choose a language",
+		
 	},
 	zh: {
 		homeTitle: "揭示<br>AI奇蹟 - <br>李飛飛博士",
