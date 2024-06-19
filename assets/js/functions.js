@@ -1,45 +1,45 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('.side-nav li, #btn-learnMore, #btn-return').click(function(){
-        if (!($(this).hasClass('active'))){
+	$('.side-nav li, #btn-learnMore, #btn-return').click(function () {
+		if (!($(this).hasClass('active'))) {
 			let $this = $(this),
 				curActive = $this.parent().find('.active'),
 				curPos = $this.parent().children().index(curActive),
 				nextPos = $this.parent().children().index($this),
 				lastItem = $(this).parent().children().length - 1;
-            $('.side-nav').children().removeClass('active');
-            $('.side-nav').children().eq(nextPos).addClass('active');
+			$('.side-nav').children().removeClass('active');
+			$('.side-nav').children().eq(nextPos).addClass('active');
 			updateContent(curPos, nextPos, lastItem);
 		}
-    });
+	});
 
 	let debounceTimeout;
-	$(window).on('wheel', function(event){
+	$(window).on('wheel', function (event) {
 		if (debounceTimeout) {
 			clearTimeout(debounceTimeout);
 		}
-	
-		debounceTimeout = setTimeout(function() {
+
+		debounceTimeout = setTimeout(function () {
 			let delta = event.originalEvent.deltaY,
 				$activeItem = $('.side-nav .active'),
 				curPos = $activeItem.index(),
 				lastItem = $('.side-nav').children().length - 1;
-			
+
 			let nextPos;
 			if (delta > 0) { // 向下滾動
 				nextPos = (curPos + 1 > lastItem) ? 0 : curPos + 1;
 			} else { // 向上滾動
 				nextPos = (curPos - 1 < 0) ? lastItem : curPos - 1;
 			}
-	
+
 			let $nextItem = $('.side-nav').children().eq(nextPos);
 			$('.side-nav').children().removeClass('active');
 			$nextItem.addClass('active');
 			updateContent(curPos, nextPos, lastItem);
 		}, 200); // 200毫秒的debounce時間
 	});
-	
-    function updateContent(curPos, nextPos, lastItem){ // 頁面更新
+
+	function updateContent(curPos, nextPos, lastItem) { // 頁面更新
 		$('.main').children().removeClass('active');
 		$('.main').children().eq(nextPos).addClass('active');
 		$('.main .section').children().removeClass('section-next section-prev');
@@ -52,32 +52,32 @@ $(document).ready(function(){
 		}
 	}
 	textAnimation('.sayings');
-	function textAnimation(className){
+	function textAnimation(className) {
 		$(className).textillate({
 			in: {
-			  effect: 'fadeInLeft', 
-			  delay: 50, 
-			  sequence: true,
+				effect: 'fadeInLeft',
+				delay: 50,
+				sequence: true,
 			},
 			out: {
-			  effect: 'fadeOutRight', 
-			  delay: 50,
-			  sequence: true,
+				effect: 'fadeOutRight',
+				delay: 50,
+				sequence: true,
 			},
 			loop: true
 		});
 	}
 	// 在按鈕上設置事件監聽器
-	document.querySelector('.btn-light[onclick="setLanguage(\'en\')"]').addEventListener('click', function() {
+	document.querySelector('.btn-light[onclick="setLanguage(\'en\')"]').addEventListener('click', function () {
 		setLanguage('en');
 	});
-	document.querySelector('.btn-light[onclick="setLanguage(\'zh\')"]').addEventListener('click', function() {
+	document.querySelector('.btn-light[onclick="setLanguage(\'zh\')"]').addEventListener('click', function () {
 		setLanguage('zh');
 	});
 	// Media
-    $('#videoCarousel').carousel({
-        interval: false
-    });
+	$('#videoCarousel').carousel({
+		interval: false
+	});
 });
 
 // lang change
@@ -104,8 +104,9 @@ const translations = {
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>Contact</a>",
 		langChange: "<button type=\"button\" class=\"lang-change btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#language\">Change Language</button>",
 		modalTitle: "Choose a language",
-		
-		
+		timelineFollowTitle: "LIFE STORY OF HER",
+
+
 	},
 	zh: {
 		homeTitle: "揭示<br>AI奇蹟 - <br>李飛飛博士",
@@ -129,6 +130,7 @@ const translations = {
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>聯絡資訊</a>",
 		langChange: "<button type=\"button\" class=\"lang-change btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#language\">改變使用語言</button>",
 		modalTitle: "請選擇語言",
+		timelineFollowTitle: "李飛飛的生平"
 	}
 };
 
@@ -151,6 +153,7 @@ function setLanguage(lang) {
 	document.getElementById('right-contact').innerHTML = translations[lang].rightContact;
 	document.getElementById('lang-change').innerHTML = translations[lang].langChange;
 	document.getElementById('modal-title').innerHTML = translations[lang].modalTitle;
+	document.getElementById('timelinefollowtitle').innerHTML = translations[lang].timelineFollowTitle;
 }
 
 // 檢查localStorage中的語言設置
