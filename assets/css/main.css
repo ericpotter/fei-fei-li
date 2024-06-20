@@ -85,11 +85,6 @@
         font-size: 50px;
     }
 
-    #btn-learnMore {
-        font-size: 13px;
-        bottom: 30%;
-    }
-
     .home-title {
         padding-top: 20%;
         padding-left: 5%;
@@ -207,11 +202,6 @@
         font-size: 63px;
     }
 
-    #btn-learnMore {
-        font-size: 13px;
-        bottom: 30%;
-    }
-
     .home-title {
         padding-top: 10%;
         padding-left: 5%;
@@ -327,11 +317,6 @@
     /* section home */
     .section-home h1 {
         font-size: 70px;
-    }
-
-    #btn-learnMore {
-        font-size: 14px;
-        bottom: 30%;
     }
 
     .home-title {
@@ -459,11 +444,6 @@
     /* section home */
     .section-home h1 {
         font-size: 65px;
-    }
-
-    #btn-learnMore {
-        font-size: 15px;
-        bottom: 20%;
     }
 
     .home-title {
@@ -600,11 +580,6 @@
         font-size: 65px;
     }
 
-    #btn-learnMore {
-        font-size: 16px;
-        bottom: 20%;
-    }
-
     .home-title {
         padding-top: 0;
         padding-left: 10%;
@@ -739,11 +714,6 @@
         font-size: 70px;
     }
 
-    #btn-learnMore {
-        font-size: 16px;
-        bottom: 20%;
-    }
-
     .home-title {
         padding-top: 0;
         padding-left: 10%;
@@ -875,11 +845,6 @@
     /* section home */
     .section-home h1 {
         font-size: 80px;
-    }
-
-    #btn-learnMore {
-        font-size: 16px;
-        bottom: 20%;
     }
 
     .home-title {
@@ -1211,23 +1176,6 @@ a {
     right: 0;
 }
 
-#btn-learnMore {
-    position: absolute;
-    z-index: 2;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-color: #3E55E1;
-    color: white;
-    border: none;
-    padding: 10px 15px 10px 15px;
-    transition: 0.3s ease-in-out;
-    border-radius: 3px;
-}
-
-#btn-learnMore:hover {
-    box-shadow: 10px 10px #4f4f4f;
-}
-
 /* section simple intro */
 .section-intro {
     height: 100%;
@@ -1275,23 +1223,20 @@ a {
 
 
 /* Media */
-.section-media {}
+.section-media {
+    height: 100%;
+    width: 100%;
+}
 
 .video-container {
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .carousel__video-wrapper {
     width: 728px;
-    /* Diameter of the circular video */
     height: 410px;
-    /* Diameter of the circular video */
-    border-radius: 50%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .carousel__video {
