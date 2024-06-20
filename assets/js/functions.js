@@ -94,6 +94,8 @@ const translations = {
 		lSideNavDedication: "Dedication",
 		lSideNavMedia: "Media",
 		lSideNavAbout: "About",
+		lSideNavSocial: "Social media",
+		lSideNavContact: "Contact",
 		saying1: "China is a dormant lion. When it stirs, the world will stand in awe.",
 		saying2: "Empower computers with visual intelligence, and create a brighter future for children and the world.",
 		author: "Dr. Fei-Fei Li in <cite title=\"Source Title\" id=\"source-title\">Google Developer Day</cite>",
@@ -151,6 +153,8 @@ const translations = {
 		lSideNavDedication: "貢獻",
 		lSideNavMedia: "媒體",
 		lSideNavAbout: "關於",
+		lSideNavSocial: "社群媒體",
+		lSideNavContact: "聯繫資訊",
 		saying1: "中國是一隻沉睡的獅子，它一旦被驚醒，世界會為之震動。",
 		saying2: "為電腦賦予視覺智能，為兒童和世界創造更美好的未來。",
 		author: "李飛飛博士 <cite title=\"Source Title\" id=\"source-title\">Google開發者日</cite>",
@@ -210,6 +214,9 @@ function setLanguage(lang) {
 	document.getElementById('l-side-nav-intro').innerHTML = translations[lang].lSideNavIntro;
 	document.getElementById('l-side-nav-media').innerHTML = translations[lang].lSideNavMedia;
 	document.getElementById('l-side-nav-about').innerHTML = translations[lang].lSideNavAbout;
+	document.getElementById('l-side-nav-dedication').innerHTML = translations[lang].lSideNavDedication;
+	document.getElementById('l-side-nav-social').innerHTML = translations[lang].lSideNavSocial;
+	document.getElementById('l-side-nav-contact').innerHTML = translations[lang].lSideNavContact;
 	document.getElementById('saying-1').innerHTML = translations[lang].saying1;
 	document.getElementById('saying-2').innerHTML = translations[lang].saying2;
 	document.getElementById('author').innerHTML = translations[lang].author;
