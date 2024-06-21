@@ -45,7 +45,10 @@ function setLanguage(lang) {
 	document.getElementById('intro-title').innerHTML = translations[lang].introTitle;
 	document.getElementById('intro-description').innerHTML = translations[lang].introDescription;
 	document.getElementById('header-title').innerHTML = translations[lang].headerTitle;
-	document.getElementById('l-side-nav-life').innerHTML = translations[lang].lSideNavHome;
+	document.getElementById('l-side-nav-home').innerHTML = translations[lang].lSideNavHome;
+	document.getElementById('l-side-nav-intro').innerHTML = translations[lang].lSideNavIntro;
+	document.getElementById('l-side-nav-media').innerHTML = translations[lang].lSideNavMedia;
+	document.getElementById('l-side-nav-about').innerHTML = translations[lang].lSideNavAbout;
 	document.getElementById('saying-1').innerHTML = translations[lang].saying1;
 	document.getElementById('saying-2').innerHTML = translations[lang].saying2;
 	document.getElementById('author').innerHTML = translations[lang].author;

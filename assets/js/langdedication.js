@@ -1,25 +1,24 @@
 // lang change
 const translations = {
 	en: {
-		homeTitle: "Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li",
-		learnMore: "Learn more <i class='fa-solid fa-angles-right'></i>",
-		introTitle: "<strong>Trailblazing Journey as Leading Female Scientist</strong>",
-		introDescription: "<em>Fei-Fei Li is a leading Chinese computer scientist specializing in machine learning and artificial intelligence. With roles at Google and Stanford University, she has made significant contributions to computer vision and deep learning research.</em>",
 		headerTitle: "Female Scientist",
-		lSideNavHome: "Home",
-		lSideNavIntro: "Intro",
-		lSideNavLife: "Life",
 		lSideNavDedication: "Dedication",
-		lSideNavMedia: "Media",
-		lSideNavAbout: "About",
-		lSideNavSocial: "Social media",
-		lSideNavContact: "Contact",
 		rightHome: "<a href=\"index.html\"><i class=\"fa-solid fa-house nav-options\"></i>Home</a>",
 		rightLife: "<a href=\"life.html\"><i class=\"fa-solid fa-address-card nav-options\"></i>Life</a>",
 		rightDedictation: "<a href=\"dedication.html\"><i class=\"fa-solid fa-award nav-options\"></i>Dedication</a>",
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>Contact</a>",
 		langChange: "<button type=\"button\" class=\"lang-change btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#language\">Change Language</button>",
 		modalTitle: "Choose a language",
+	},
+	zh: {
+		headerTitle: "傑出女性科學家",
+		lSideNavDedication: "貢獻",
+		rightHome: "<a href=\"index.html\"><i class=\"fa-solid fa-house nav-options\"></i>首頁</a>",
+		rightLife: "<a href=\"life.html\"><i class=\"fa-solid fa-address-card nav-options\"></i>生平</a>",
+		rightDedictation: "<a href=\"dedication.html\"><i class=\"fa-solid fa-award nav-options\"></i>貢獻</a>",	
+		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>聯絡資訊</a>",
+		langChange: "<button type=\"button\" class=\"lang-change btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#language\">改變使用語言</button>",
+		modalTitle: "請選擇語言",
 	}
 };
 
