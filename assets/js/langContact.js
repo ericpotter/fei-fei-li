@@ -11,6 +11,8 @@ const translations = {
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>Contact</a>",
 		langChange: "<button type=\"button\" class=\"lang-change btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#language\">Change Language</button>",
 		modalTitle: "Choose a language",
+		howto: "How to contact Dr. Fei-Fei Li ?",
+		linkk:"link"
 	},
 	zh: {
 		headerTitle: "傑出女性科學家",
@@ -23,6 +25,8 @@ const translations = {
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>聯絡資訊</a>",
 		langChange: "<button type=\"button\" class=\"lang-change btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#language\">改變使用語言</button>",
 		modalTitle: "請選擇語言",
+		howto: "如何聯繫李飛飛 ?",
+		linkk:"連結"
 	}
 };
 
@@ -36,6 +40,8 @@ function setLanguage(lang) {
 	document.getElementById('right-contact').innerHTML = translations[lang].rightContact;
 	document.getElementById('lang-change').innerHTML = translations[lang].langChange;
 	document.getElementById('modal-title').innerHTML = translations[lang].modalTitle;
+	document.getElementById('howto').innerHTML = translations[lang].howto;
+	document.getElementById('linkk').innerHTML = translations[lang].linkk;
 }
 
 
