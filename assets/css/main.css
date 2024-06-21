@@ -996,15 +996,7 @@
 }
 
 /* all settings */
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
+body, p, h1, h2, h3, h4, h5, h6, a {
     font-family: 'Montserrat', "LXGW WenKai Mono TC", sans-serif;
     color: white;
 }
