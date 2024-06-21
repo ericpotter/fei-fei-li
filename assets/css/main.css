@@ -854,7 +854,7 @@
 
     /* side-nav */
     .side-nav {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .l-side-nav {
@@ -1148,8 +1148,8 @@ a {
     align-items: center;
     justify-content: center;
     color: #8d8d8d;
-    margin-top: 55%;
-    margin-bottom: 55%;
+    margin-top: 100%;
+    margin-bottom: 100%;
 }
 
 .side-nav li:hover {
@@ -1236,7 +1236,6 @@ a {
 .footer {
     display: flex;
     align-items: center;
-    padding-top: 2%;
 }
 
 /* language changing */
@@ -1269,17 +1268,20 @@ a {
 .section-media {
     height: 100%;
     width: 100%;
+    border: solid red;
 }
 
 .video-container {
-    
+    /* border: solid red; */
+    height: 100%;
 }
 
 .carousel__video-wrapper {
+    /* border: solid green; */
+    border-radius: 10px;
     width: 728px;
     height: 410px;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
 .carousel__video {
