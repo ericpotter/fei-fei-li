@@ -1,11 +1,26 @@
 // lang change
 const translations = {
 	en: {
-        headerTitle: "Female Scientist",
+		homeTitle: "Unveiling<br>AI Wonders - <br>Dr. Fei-Fei Li",
+		learnMore: "Learn more <i class='fa-solid fa-angles-right'></i>",
+		introTitle: "<strong>Trailblazing Journey as Leading Female Scientist</strong>",
+		introDescription: "<em>Fei-Fei Li is a leading Chinese computer scientist specializing in machine learning and artificial intelligence. With roles at Google and Stanford University, she has made significant contributions to computer vision and deep learning research.</em>",
+		headerTitle: "Female Scientist",
+		lSideNavHome: "Home",
+		lSideNavIntro: "Intro",
 		lSideNavLife: "Life",
+		lSideNavDedication: "Dedication",
+		lSideNavMedia: "Media",
+		lSideNavAbout: "About",
+		lSideNavSocial: "Social media",
+		lSideNavContact: "Contact",
+		saying1: "China is a dormant lion. When it stirs, the world will stand in awe.",
+		saying2: "Empower computers with visual intelligence, and create a brighter future for children and the world.",
+		author: "Dr. Fei-Fei Li in <cite title=\"Source Title\" id=\"source-title\">Google Developer Day</cite>",
 		rightHome: "<a href=\"index.html\"><i class=\"fa-solid fa-house nav-options\"></i>Home</a>",
 		rightLife: "<a href=\"life.html\"><i class=\"fa-solid fa-address-card nav-options\"></i>Life</a>",
 		rightDedictation: "<a href=\"dedication.html\"><i class=\"fa-solid fa-award nav-options\"></i>Dedication</a>",
+		rightMedia: "<a href=\"media.html\"><i class=\"fa-solid fa-photo-film nav-options\"></i>Media</a>",
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>Contact</a>",
 		langChange: "<button type=\"button\" class=\"lang-change btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#language\">Change Language</button>",
 		modalTitle: "Choose a language",
@@ -30,11 +45,26 @@ const translations = {
 		timelineContentSixteen: "Due to Twitter's acquisition by Elon Musk, Li Feifei stepped down from her role as an independent director at Twitter."
 	},
 	zh: {
-        headerTitle: "傑出女性科學家",
+		homeTitle: "揭示<br>AI奇蹟 - <br>李飛飛博士",
+		learnMore: "了解更多 <i class='fa-solid fa-angles-right'></i>",
+		introTitle: "<strong>作為領先的女性科學家的開創之旅</strong>",
+		introDescription: "<em>李飛飛博士是一位專注於機器學習和人工智慧的領先華裔計算機科學家。她在Google和斯坦福大學擔任重要職務，對計算機視覺和深度學習研究作出了重大貢獻。</em>",
+		headerTitle: "傑出女性科學家",
+		lSideNavHome: "主頁",
+		lSideNavIntro: "簡介",
 		lSideNavLife: "生平",
+		lSideNavDedication: "貢獻",
+		lSideNavMedia: "媒體",
+		lSideNavAbout: "關於",
+		lSideNavSocial: "社群媒體",
+		lSideNavContact: "聯繫資訊",
+		saying1: "中國是一隻沉睡的獅子，它一旦被驚醒，世界會為之震動。",
+		saying2: "為電腦賦予視覺智能，為兒童和世界創造更美好的未來。",
+		author: "李飛飛博士 <cite title=\"Source Title\" id=\"source-title\">Google開發者日</cite>",
 		rightHome: "<a href=\"index.html\"><i class=\"fa-solid fa-house nav-options\"></i>首頁</a>",
 		rightLife: "<a href=\"life.html\"><i class=\"fa-solid fa-address-card nav-options\"></i>生平</a>",
 		rightDedictation: "<a href=\"dedication.html\"><i class=\"fa-solid fa-award nav-options\"></i>貢獻</a>",
+		rightMedia: "<a href=\"media.html\"><i class=\"fa-solid fa-photo-film nav-options\"></i>媒體</a>",
 		rightContact: "<a href=\"contact.html\"><i class=\"fa-solid fa-envelope nav-options\"></i>聯絡資訊</a>",
 		langChange: "<button type=\"button\" class=\"lang-change btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#language\">改變使用語言</button>",
 		modalTitle: "請選擇語言",
@@ -61,34 +91,46 @@ const translations = {
 };
 
 function setLanguage(lang) {
+	document.getElementById('home-title').innerHTML = translations[lang].homeTitle;
+	document.getElementById('intro-title').innerHTML = translations[lang].introTitle;
+	document.getElementById('intro-description').innerHTML = translations[lang].introDescription;
 	document.getElementById('header-title').innerHTML = translations[lang].headerTitle;
-	document.getElementById('l-side-nav-life').innerHTML = translations[lang].lSideNavLife;
+	document.getElementById('l-side-nav-home').innerHTML = translations[lang].lSideNavHome;
+	document.getElementById('l-side-nav-intro').innerHTML = translations[lang].lSideNavIntro;
+	document.getElementById('l-side-nav-media').innerHTML = translations[lang].lSideNavMedia;
+	document.getElementById('l-side-nav-about').innerHTML = translations[lang].lSideNavAbout;
+	document.getElementById('l-side-nav-dedication').innerHTML = translations[lang].lSideNavDedication;
+	document.getElementById('l-side-nav-social').innerHTML = translations[lang].lSideNavSocial;
+	document.getElementById('l-side-nav-contact').innerHTML = translations[lang].lSideNavContact;
+	document.getElementById('saying-1').innerHTML = translations[lang].saying1;
+	document.getElementById('saying-2').innerHTML = translations[lang].saying2;
+	document.getElementById('author').innerHTML = translations[lang].author;
 	document.getElementById('right-home').innerHTML = translations[lang].rightHome;
 	document.getElementById('right-life').innerHTML = translations[lang].rightLife;
 	document.getElementById('right-dedication').innerHTML = translations[lang].rightDedictation;
 	document.getElementById('right-contact').innerHTML = translations[lang].rightContact;
 	document.getElementById('lang-change').innerHTML = translations[lang].langChange;
 	document.getElementById('modal-title').innerHTML = translations[lang].modalTitle;
-	document.querySelector('.timeline-item').innerHTML = translations[lang].timelineFollowTitle;
-	document.getElementById('timeline-content-one').innerHTML = translations[lang].timelineContentOne;
-	document.getElementById('timeline-childhood').innerHTML = translations[lang].timelineChildhood;
-	document.getElementById('timeline-content-two').innerHTML = translations[lang].timelineContentTwo;
-	document.getElementById('timeline-high-school').innerHTML = translations[lang].timelineHighSchool;
-	document.getElementById('timeline-content-three').innerHTML = translations[lang].timelineContentThree;
-	document.getElementById('timeline-content-four').innerHTML = translations[lang].timelineContentFour;
-	document.getElementById('timeline-content-five').innerHTML = translations[lang].timelineContentFive;
-	document.getElementById('timeline-content-six').innerHTML = translations[lang].timelineContentSix;
-	document.getElementById('timeline-content-seven').innerHTML = translations[lang].timelineContentSeven;
-	document.getElementById('timeline-content-eight').innerHTML = translations[lang].timelineContentEight;
-	document.getElementById('timeline-content-nine').innerHTML = translations[lang].timelineContentNine;
-	document.getElementById('timeline-content-ten').innerHTML = translations[lang].timelineContentTen;
-	document.getElementById('timeline-content-eleven').innerHTML = translations[lang].timelineContentEleven;
-	document.getElementById('timeline-content-twelve').innerHTML = translations[lang].timelineContentTwelve;
-	document.getElementById('timeline-content-thirteen').innerHTML = translations[lang].timelineContentThirteen;
-	document.getElementById('timeline-content-fourteen').innerHTML = translations[lang].timelineContentFourteen;
-	document.getElementById('timeline-content-fifteen').innerHTML = translations[lang].timelineContentFifteen;
-	document.getElementById('timeline-content-fifteen').innerHTML = translations[lang].timelineContentFifteen; 
-	document.getElementById('timeline-content-sixteen').innerHTML = translations[lang].timelineContentSixteen;
+	// document.querySelector('.timeline-item').innerHTML = translations[lang].timelineFollowTitle;
+	// document.getElementById('timeline-content-one').innerHTML = translations[lang].timelineContentOne;
+	// document.getElementById('timeline-childhood').innerHTML = translations[lang].timelineChildhood;
+	// document.getElementById('timeline-content-two').innerHTML = translations[lang].timelineContentTwo;
+	// document.getElementById('timeline-high-school').innerHTML = translations[lang].timelineHighSchool;
+	// document.getElementById('timeline-content-three').innerHTML = translations[lang].timelineContentThree;
+	// document.getElementById('timeline-content-four').innerHTML = translations[lang].timelineContentFour;
+	// document.getElementById('timeline-content-five').innerHTML = translations[lang].timelineContentFive;
+	// document.getElementById('timeline-content-six').innerHTML = translations[lang].timelineContentSix;
+	// document.getElementById('timeline-content-seven').innerHTML = translations[lang].timelineContentSeven;
+	// document.getElementById('timeline-content-eight').innerHTML = translations[lang].timelineContentEight;
+	// document.getElementById('timeline-content-nine').innerHTML = translations[lang].timelineContentNine;
+	// document.getElementById('timeline-content-ten').innerHTML = translations[lang].timelineContentTen;
+	// document.getElementById('timeline-content-eleven').innerHTML = translations[lang].timelineContentEleven;
+	// document.getElementById('timeline-content-twelve').innerHTML = translations[lang].timelineContentTwelve;
+	// document.getElementById('timeline-content-thirteen').innerHTML = translations[lang].timelineContentThirteen;
+	// document.getElementById('timeline-content-fourteen').innerHTML = translations[lang].timelineContentFourteen;
+	// document.getElementById('timeline-content-fifteen').innerHTML = translations[lang].timelineContentFifteen;
+	// document.getElementById('timeline-content-fifteen').innerHTML = translations[lang].timelineContentFifteen; 
+	// document.getElementById('timeline-content-sixteen').innerHTML = translations[lang].timelineContentSixteen;
 }
 
 
