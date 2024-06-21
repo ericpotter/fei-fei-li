@@ -1165,8 +1165,8 @@ a {
     align-items: center;
     justify-content: center;
     color: #8d8d8d;
-    margin-top: 100%;
-    margin-bottom: 100%;
+    margin-top: 50%;
+    margin-bottom: 50%;
 }
 
 .side-nav li:hover {
